@@ -31,7 +31,7 @@
 <div id="container">
   <div id="textzone">
     <div id="pageHeader">
-      <h2><span class="fade"><acronym title="Hikitech">hkt:</acronym></span> 
+      <h2><span class="fade"><acronym title="Hikitech.">hkt</acronym>:</span> 
 	<span>Florent Kirchner</span></h2>
     </div>
 
@@ -60,9 +60,9 @@
       This section regroups my recent bibliography with links to
       <acronym title="Papers' electronic edition.">ee</acronym> versions and
       <acronym title="TeX Bibliographical database entries.">bibtex</acronym>
-      reference files. A detailed list of all papers and their abstracts is
-      also readily <a href="papersLongText.html" title="Collection of all papers.">
-      available</a>.
+      reference files. An exhaustive list of papers, organized by referring
+      type, is available <a href="papersLong.html" title="Collection of all
+      papers."> here</a>.
       </span></p>
 
       <p>
@@ -70,23 +70,55 @@
       <a href="data/fotc2006.pdf">[ee]</a> <a href="data/fotc2006.bib">[bib]</a> <br />
       Post-proceedings of the 2006 International Workshop on Proofs and Programs, 2007.
       </p>
+      <p class="abstract">
+      We expose a formalism that allows the expression of any theory with one or
+      more axiom schemes using a finite number of axioms. This allows us to give
+      finite first-order axiomatizations of arithmetic and real analysis, and a
+      presentation of arithmetic in deduction modulo that has a finite number of
+      rewrite rules.  Overall, this formalization relies on a weak calculus of
+      explicit substitutions to provide a simple and finite framework.
+      </p>
 
       <p>
       <i>Rule-Based Operational Semantics for an Imperative Language.</i>
       <a href="data/rule2006.pdf">[ee]</a> <a href="data/rule2006.bib">[bib]</a> <br />
       (with Fran&ccedil;ois-R&eacute;gis Sinot) 7th International Workshop on Rule-Based Programming, 2006.
       </p>
+      <p class="abstract">
+      Operational semantics for programming languages usually come in two
+      flavours: big-step and small-step. Both are defined using
+      <i>deduction</i> rules with a congruence rule allowing reduction in
+      certain contexts. For a description based on <i>rewrite</i> rules,
+      known approaches consist in deriving an abstract machine, which is
+      very close to implementation. In this paper, we describe the
+      operational semantics of an imperative language in a rule-based style,
+      arguably as abstract as the other kinds of semantics. Moreover, we
+      combine the approach with the store-based semantics, which puts the
+      focus on memory states rather than values, which is more appropriate
+      for imperative languages.
+      </p>
 
       <p>
       <i>PVS#: Streamlined Tacticals for PVS.</i>
-      <a href="doc/strategies2006.pdf">[ee]</a> <a href="doc/strategies2006.bib">[bib]</a>.
+      <a href="data/strategies2006.pdf">[ee]</a> <a href="data/strategies2006.bib">[bib]</a>.
       <br />
       (with C&eacute;sar Mu&ntilde;oz) 6th International Workshop on Strategies in Automated Deduction</i>, 2006.
+      </p>
+      <p class="abstract">
+      The semantics of a proof language relies on the representation of the <i>state</i> of
+      a proof after a logical rule has been applied. This information, which is
+      usually meaningless from a logical point of view, is fundamental to describe
+      the control mechanism of the proof search provided by the language. In this
+      paper, we propose a datatype, called <i>proof monad</i>, to represent the state
+      information of a proof and we illustrate its use in PVS. Furthermore, we show
+      how this representation can be used to design a new set of powerful PVS
+      tacticals that have simple and clear semantics. The implementation of these
+      tacticals is called PVS#.
       </p>
 
       <p><span>
       More recent, yet-unpublished work include my <acronym title="Philosophi&aelig; Doctor.">
-      Ph.D</acronym> <a href="">manuscript</a>.
+      Ph.D</acronym> <a href="data/thesis.pdf">manuscript</a>.
       </span></p>
     </div>
 
@@ -140,9 +172,9 @@
       </table>
       
       <p><span>
-      If you'd rather go digital, here is my electronic mail, in <acronym
-      title="The list programming language."> LISP</acronym> form:
-      <div id="email">
+      If you'd rather go digital, here is my electronic mail, as a <acronym
+      title="The list programming language."> LISP</acronym> redex:
+      <div class="mono">
       (format nil "~S@~S" "florent.kirchner" "inria.fr") <br />
       (format nil "~S@~S" "florent.kirchner" "gmail.com")
       </div>

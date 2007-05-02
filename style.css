@@ -1,6 +1,6 @@
 /* css Florent Kirchner style by Hikitech */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* This file based on various designs from Zen Garden */
+/* This file borrows from various Zen Garden designs */
 
 body {
   background:		#222 no-repeat top left;
@@ -26,8 +26,12 @@ p {
   text-align:		justify;
 }
 
+p.abstract {
+  margin:		-10px 20px 12px 30px;
+  font:			normal 9pt/11pt arial;
+}
+
 a { 
-  /*font-weight: 		bold; */
   text-decoration: 	none; 
   color: 		#7F7F7F;
 }
@@ -40,14 +44,21 @@ a.footer {
 
 table {
   border-spacing: 	70px 0px;
+  margin-left:		auto; 
+  margin-right:		auto; 
 }
 
 span.fade {
   color:		#bbb;
 }
 
+span.stark {
+  color:		#000;
+}
+
 #container {
   background:		#63737e url(images/background.png) repeat-x top left;
+  background-attachment:fixed;  
   width:		670px;
   margin-left: 		auto;
   margin-right: 	auto;
@@ -55,7 +66,6 @@ span.fade {
   margin-bottom:	0px;
   padding-top:		50px;
 }
-
 
 #textzone {
   position:		relative;
@@ -65,7 +75,7 @@ span.fade {
   margin-right: 	auto;
   margin-top:		auto;
   width:		502px;
-  color:		#333;
+  color:		#444;
   padding:		20px 30px 30px 30px;
 }
 
@@ -73,9 +83,20 @@ span.fade {
   padding-right:	120px;
 }
 
-#email {
-  font-family:		monospace;
-  margin:		0px 20px;
+#filebrowser {
+  background:		#191919;
+  margin-left: 		auto;
+  margin-right: 	auto;
+  margin-top:		30px;
+  width:		400px;
+  padding:		10px 10px 10px 10px;
+  color:		#aaa;
+  text-align:		center;
+}
+
+.mono {
+  font:			normal 9pt/11pt monospace;
+  margin:		0px 40px;
 }
 
 #footer {
