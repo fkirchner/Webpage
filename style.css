@@ -13,13 +13,6 @@ h2 {
   padding-bottom:	5px;
 }
 
-/*
-h3 {
-  padding-left:	20px;
-  background:	url(images/dot.png) no-repeat left;
-}
-*/
-
 p {
   margin:		12px 0px;
   font:			normal 13px/18px arial;
@@ -28,7 +21,7 @@ p {
 
 p.abstract {
   margin:		-10px 20px 12px 30px;
-  font:			normal 9pt/11pt arial;
+  font:			normal 9px/11px arial;
 }
 
 a { 
