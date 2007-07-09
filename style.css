@@ -3,9 +3,9 @@
 /* This file borrows from various Zen Garden designs */
 
 body {
-  background:		#222 no-repeat top left;
-  background-attachment:fixed;
-  margin:		0;
+  background:		#222 /*no-repeat top left;*/
+  /*background-attachment:fixed;*/
+  margin:		0px;
   font:			normal 13px/18px serif;
 }
 
