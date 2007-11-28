@@ -6,22 +6,23 @@ body {
   background:		#222; /*no-repeat top left;*/
   /*background-attachment:fixed;*/
   margin:		0px;
-  font:			normal 13px/18px serif;
+  font:			normal 12px/18px serif;
 }
 
-h2 {
+h2,h3 {
+  font-family:		serif;
   padding-bottom:	5px;
 }
 
 p {
   margin:		12px 0px;
-  font:			normal 13px/18px arial;
-  text-align:		justify;
+}
+
+p.space {
 }
 
 p.abstract {
-  margin:		-10px 20px 12px 30px;
-  font:			normal 12px/15px arial;
+  margin:		5px 20px 12px 30px;
 }
 
 a { 
@@ -49,31 +50,50 @@ span.stark {
   color:		#000;
 }
 
+
 #container {
-  background:		#63737e url(images/background.png) repeat-x top left;
-  background-attachment:fixed;  
+  background:		#63737e; 
   width:		670px;
   margin-left: 		auto;
   margin-right: 	auto;
-  margin-top:		0px;
-  margin-bottom:	0px;
-  padding-top:		50px;
+}
+
+/*TODO: make them inherit their common properties*/
+
+#header {
+  font-family:		arial;
+  text-align:		justify;
+  position:		relative;
+  text-align:		left;
+  background:		#eeeff0 url(images/header.png) no-repeat top left;
+  height:		140px;
+  color:		#444;
+  padding:		60px 80px 0px 80px;
 }
 
 #textzone {
+  font-family:		arial;
+  text-align:		justify;
   position:		relative;
   text-align:		left;
-  background:		#eeeff0 url(images/cartoon.png) no-repeat top left;
-  margin-left: 		auto;
-  margin-right: 	auto;
-  margin-top:		auto;
-  width:		502px;
+  background:		#eeeff0 url(images/textBackground.png) repeat-y top left;
   color:		#444;
-  padding:		20px 30px 30px 30px;
+  padding:		0px 80px 12px 80px;
+}
+
+#footer {
+  position:		relative;
+  background:		transparent url(images/footer.png) no-repeat top left;
+  /*width:		670px;*/
+  height:		48px;
+  padding-top:		27px;
+  text-align:		center;
+  text-transform: 	uppercase;
+  font-size:		10px;
 }
 
 #quickSummary {
-  padding-right:	120px;
+  padding-right:	70px;
 }
 
 #filebrowser {
@@ -90,21 +110,5 @@ span.stark {
 .mono {
   font:			normal 9pt/11pt monospace;
   margin:		0px 40px;
-}
-
-#footer {
-  position:		relative;
-  background:		transparent;
-  width:		670px;
-  height:		48px;
-  margin-left: 		auto;
-  margin-right: 	auto;
-  padding-top:		27px;
-  padding-bottom:	0px;
-  margin-bottom:	0px;
-  text-indent:		0px;
-  text-align:		center;
-  text-transform: 	uppercase;
-  font-size:		10px;
 }
 
