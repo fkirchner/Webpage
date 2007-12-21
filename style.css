@@ -6,23 +6,31 @@ body {
   background:		#222; /*no-repeat top left;*/
   /*background-attachment:fixed;*/
   margin:		0px;
-  font:			normal 12px/18px serif;
+  font:			normal 12px/1.5 serif;
 }
 
-h2,h3 {
+h2 {
   font-family:		serif;
-  padding-bottom:	5px;
+  line-height:		1;
+  margin-top:		1em;
+  margin-bottom:	1em
+}
+
+h3 {
+  /*text-align:		center;*/
+  font-family:		serif;
+  line-height:		1.286;
+  margin-top:		1.286em;
+  margin-bottom:	1.286em
+  /*padding-bottom:	5px;*/
 }
 
 p {
-  margin:		12px 0px;
+  margin:		1.5em 0em;
 }
 
-p.space {
-}
-
-p.abstract {
-  margin:		5px 20px 12px 30px;
+blockquote {
+  margin:		1.5em;
 }
 
 a { 
@@ -62,7 +70,6 @@ span.stark {
 
 #header {
   font-family:		arial;
-  text-align:		justify;
   position:		relative;
   text-align:		left;
   background:		#eeeff0 url(images/header.png) no-repeat top left;
@@ -73,7 +80,6 @@ span.stark {
 
 #textzone {
   font-family:		arial;
-  text-align:		justify;
   position:		relative;
   text-align:		left;
   background:		#eeeff0 url(images/textBackground.png) repeat-y top left;
