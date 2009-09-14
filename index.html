@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
 
 
 <head>
@@ -30,22 +29,21 @@
 <div id="container">
 
   <div id="header">
-    <h2><span class="fade"><acronym title="Hikitech.">hkt</acronym>:</span> 
+    <h2><span class="fade"><abbr title="Hikitech.">hkt</abbr>:</span> 
       Florent Kirchner</h2>
     <div id="quickSummary">
-      <p><span>
-      Hey there. I am a post-doctoral fellow drawn to theoretical and
-      applied research in computer science. I am working in the fields of
-      <i>formal methods</i> and <i>software security</i>. More
-      specifically I am interested in the communication between proof systems,
-      the design of proof languages and in deduction modulo.
-      </span></p>
+      <p>
+      Hey there. I am a post-doctoral fellow drawn to theoretical and applied
+      research in computer science. I am working in the fields of <i>formal
+      methods</i> and <i>software security</i>. More specifically I am
+      interested in the rich interaction between proof systems, the design of
+      proof languages and in deduction modulo.
+      </p>
     </div>
   </div>
 
   <div id="textzone">
     <div>
-      <span>
       For more information, you are welcome to review my resume <a
       href="http://www.linkedin.com/in/fkirchner" title="LinkedIn
       profile.">online</a> or as a <a href="pdffiles.html" title="Localized
@@ -53,19 +51,35 @@
 
       Or even &mdash; holy sociability Batman! &mdash; try <a
       href="visual.html">eye-contact</a> and go for a talk.
-      </span>
     </div>
 
     <div id="publications">
       <h3>Notes and Publications</h3>
-      <p><span>
+      <p>
       This section regroups my recent bibliography with links to
       electronic editions and
-      <acronym title="TeX bibliographical database entries.">bibtex</acronym>
+      <abbr title="TeX bibliographical database entries.">bibtex</abbr>
       reference files. An exhaustive list of papers, organized by referring
       type, is available <a href="papersLong.html" title="Collection of all
-      papers."> here</a>.
-      </span></p>
+      papers.">here</a>.
+      </p>
+
+      <p>
+      <i>PVS#: Streamlined Tacticals for PVS.</i>
+      <a href="data/strategies2007.pdf">[ee]</a> <a href="data/strategies2007.bib">[bib]</a> <br />
+      (with C&eacute;sar Mu&ntilde;oz) 6th International Workshop on Strategies in Automated Deduction, 2007.
+      </p>
+      <blockquote><p>
+      The semantics of a proof language relies on the representation of the
+      state of a proof after a logical rule has been applied. This information,
+      which is usually meaningless from a logical point of view, is fundamental
+      to describe  the control mechanism of the proof search provided by the
+      language.  In this paper, we present a monadic datatype to represent the
+      state information of a proof and we illustrate its use in the PVS theorem
+      prover.  We show how this representation can be used to design a new set
+      of powerful tacticals for PVS, called PVS#, that have a simpler and
+      clearer semantics compared to the semantics of standard PVS tacticals.
+      </p></blockquote>
 
       <p>
       <i>Strategic Computations and Deductions.</i>
@@ -88,7 +102,7 @@
       <p>
       <i>Interoperable Proof Systems.</i>
       <a href="data/thesis.pdf">[ee]</a> <a href="data/thesis.bib">[bib]</a> <br />
-      <acronym title="Philosophi&aelig; Doctor.">Ph.D</acronym> manuscript, 2007.
+      <abbr title="Philosophi&aelig; Doctor.">Ph.D</abbr> manuscript, 2007.
       </p>
       <blockquote><p>
       Developments of formal specifications and proofs have spectacularly
@@ -100,67 +114,51 @@
       thus augmenting their interoperability.
       </p></blockquote>
 
-      <p>
-      <i>PVS#: Streamlined Tacticals for PVS.</i>
-      <a href="data/strategies2007.pdf">[ee]</a> <a href="data/strategies2007.bib">[bib]</a> <br />
-      (with C&eacute;sar Mu&ntilde;oz) 6th International Workshop on Strategies in Automated Deduction, 2007.
-      </p>
-      <blockquote><p>
-      The semantics of a proof language relies on the representation of the
-      state of a proof after a logical rule has been applied. This information,
-      which is usually meaningless from a logical point of view, is fundamental
-      to describe  the control mechanism of the proof search provided by the
-      language.  In this paper, we present a monadic datatype to represent the
-      state information of a proof and we illustrate its use in the PVS theorem
-      prover.  We show how this representation can be used to design a new set
-      of powerful tacticals for PVS, called PVS#, that have a simpler and
-      clearer semantics compared to the semantics of standard PVS tacticals.
-      </p></blockquote>
 
-      <p><span>
+      <p>
       More recent, yet-unpublished work include a journal article on the
       structure of dynamic proof interaction and a conference note on the
       design of a distributed proof system.
-      </span></p>
+      </p>
     </div>
 
     <div id="software">
       <h3>Software and Proofs</h3>
-      <p><span>
+      <p>
       Fellowship is a prototype proof assistant using sequent calculus logics
       and proof terms. It is designed to generate proof scripts for other
-      formal tools, such as <acronym 
+      formal tools, such as <abbr 
       title="The Coq proof assistant, based on the calculus of inductive constructions.">
-      Coq</acronym> and <acronym 
-      title="SRI's Prototype Verification Software.">PVS</acronym>. More
+      Coq</abbr> and <abbr 
+      title="SRI's Prototype Verification Software.">PVS</abbr>. More
       information, and download
       options, are found on its <a
       href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/trunk/index.html">
       website</a>.
-      </span></p>
+      </p>
       
-      <p><span>
+      <p>
       A library of real closed fields has been developped for Fellowship, using
       results in the theory of classes to encode second-order formulas in the
       prover's first-order framework. The documented specifications and proofs
       can be downloaded <a
       href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/index.html">
       here</a>.
-      </span></p>
+      </p>
 
-      <p><span>
+      <p>
       <a href="http://research.nianet.org/fm-at-nia/Practicals/">Practicals</a>
       is a PVS package that aims at defining a simple strategy language for the
       prover. Its implementation is based on a categorical construction,
       encoded as a datatype and associated functions, called proof monad.
-      </span></p>
+      </p>
     </div>
 
     <div id="contact">
       <h3>Contact</h3>
-      <p><span>
+      <p>
       Paper-and-pigments mail will find me at:
-      </span></p>
+      </p>
       <table>
       <tr><td>SRI International, Computer Science Laboratory</td></tr>
       <tr><td>Room EL247</td></tr>
@@ -169,20 +167,20 @@
       <tr><td>(+1) 650 859 5890</td></tr>
       </table>
       
-      <p><span>
-      If you'd rather go digital, here is my electronic mail, as a <acronym
-      title="The list programming language."> LISP</acronym> redex:
-      </span></p>
+      <p>
+      If you'd rather go digital, here is my electronic mail, as a <abbr
+      title="The list programming language."> LISP</abbr> redex:
+      </p>
       <div class="mono">
       (format nil "~A@~A" "florent.kirchner" "inria.fr") <br />
       (format nil "~A@~A" "florent.kirchner" "sri.com")
       </div>
-      <p><span>
-      For all intents and purposes, my <acronym title="Gnu privacy guard.">
-      GPG</acronym> key is available on the 
+      <p>
+      For all intents and purposes, my <abbr title="Gnu privacy guard.">
+      GPG</abbr> key is available on the 
       <a href="http://pgp.mit.edu/">MIT servers</a>, and <a
       href="data/florentKirchner.gpg">locally</a>.
-      </span></p>
+      </p>
 
     </div>
   </div>
