@@ -2,12 +2,11 @@
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
 body {
-  background:		#222; /*no-repeat top left;*/
-  /*background-attachment:fixed;*/
+  background:		#222;
   margin:		0px;
   font:			normal 12px/1.5 serif;
-  hyphenate: 		auto;
-  hyphenate-lines: 	3;
+  /*hyphenate: 		auto;
+  hyphenate-lines: 	3;*/ /*These are a bit early*/
 }
 
 h2 {
@@ -52,7 +51,7 @@ table {
 }
 
 span.fade {
-  color:		#bbb;
+  color:		#aaa;
 }
 
 span.stark {
@@ -97,6 +96,36 @@ span.stark {
 #quickSummary {
   padding-right:	70px;
 }
+
+#display {
+  position:             relative;
+  margin-left: 		auto;
+  margin-right: 	auto;
+  margin-top:		30px;
+  padding:		5px 5px 0px 5px;
+  background:		#000;
+  width:                399px;
+}
+
+  #display img {
+    border:             none;
+  }
+
+  #display .caption {
+    border-top:         1px solid #999;
+    font:		normal 9pt/1.5 monospace;
+    text-align:         center;
+    width:              399px;
+    z-index:            10;
+    background-color:   #000;   
+    color:              #fff;   
+    position:           absolute;  
+    bottom:             0px;
+  }
+
+  #display .caption .content {  
+    margin:             1ex;
+  }
 
 #filebrowser {
   background:		#191919;

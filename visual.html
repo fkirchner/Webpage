@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
 
 <head>
 
@@ -14,8 +12,45 @@
 
   <title>Florent Kirchner</title>
 
-  <!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
-  <script type="text/javascript"></script>
+  <!-- Let's do something fancy --> 
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+
+  <script type="text/javascript">
+
+    // Cause we ain't kidding.
+    "use strict";
+
+    // Pops the caption and its contents out.
+    function makedisplay() {
+      //Set the opacity to 0 and height to 1px  
+      $('#display .caption').animate({opacity: 0.0}, { queue: false, duration: 0 })
+                            .animate({height: '1px'}, { queue: true, duration: 100 });
+      //Animate the caption, opacity to 0.7 and heigth to 100px, a slide up effect
+      $('#display .caption').animate({opacity: 0.7}, 100)
+                            .animate({height: '9ex'}, 200, 
+                            // The continuation displays the content of the caption.
+                            function() {$('#display .content').animate({opacity: 0.7}, 300);})
+                            .animate({height: '8ex'}, 100);
+    }
+
+    // The "main" part.
+    $(document).ready(function(){
+
+      // Initialise everything to hiddent / transparent
+      $('#display .caption').css({opacity: 0.0});
+      $('#display .content').css({opacity: 0.0});
+
+      $("#display").mouseenter(function(event){
+        makedisplay();
+      });
+      
+      $("#display").mouseleave(function(event){
+        $('#display .content').animate({opacity: 0.0},  50);
+        $('#display .caption').animate({opacity: 0.0}, 100);
+      });
+    });
+
+  </script>
   
   <!-- to mask the stylesheet for non-css browsers -->
   <style type="text/css" media="all">
@@ -27,15 +62,16 @@
 
 <body onload="window.defaultStatus='Florent Kirchner'">
 
-<div id="filebrowser">
-  <img src="data/florent.kirchner.jpg" alt="Florent Kirchner @ Banff National Park." />
-  <div class="mono">
-    <span class="stark">
-    2006:08:20 23:01:53 <br />
-    f/13, 1/800s, ISO 800.
-    </span>
+  <div id="display">
+    <img src="images/florentKirchner.png" alt="A picture of me." />
+    <div class="caption"><div class="content"> 
+      09/09/14 14:34:28 <br />
+      f/3.5 at 1/30s, 24mm focal length, ISO 800 
+    </div></div>
   </div>
-</div>
+
 
 </body>
+
+
 </html>
