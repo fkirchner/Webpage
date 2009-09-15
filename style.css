@@ -1,6 +1,6 @@
 /* vim: set sw=2 : */
 
-/* Validate as CSS v3.0 */
+/* Validate this file at CSS level 3 */
 
 body {
   background:		#222;
@@ -112,6 +112,7 @@ span.stark {
   margin-top:		30px;
   padding:		5px 5px 0px 5px;
   background:		#000;
+  color:                #fff;
   width:                399px;
 }
 
@@ -125,7 +126,7 @@ span.stark {
     text-align:         center;
     width:              399px;
     z-index:            10;
-    background-color:   #000;   
+    background:         #000;   
     color:              #fff;   
     position:           absolute;  
     bottom:             0px;
