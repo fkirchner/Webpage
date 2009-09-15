@@ -1,4 +1,6 @@
-/* css Florent Kirchner style by Hikitech */
+/* vim: set sw=2 : */
+
+/* css style Florent Kirchner @ Hikitech */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
 body {
@@ -11,6 +13,7 @@ body {
 
 h2 {
   font-family:		serif;
+  text-shadow:          white 0em 0em 0.1em;
   line-height:		1;
   margin-top:		1em;
   margin-bottom:	1em
@@ -19,6 +22,7 @@ h2 {
 h3 {
   /*text-align:		center;*/
   font-family:		serif;
+  text-shadow:          white 0em 0em 0.1em;
   line-height:		1.286;
   margin-top:		1.286em;
   margin-bottom:	1.286em
@@ -45,9 +49,10 @@ a.footer {
 }
 
 table {
-  border-spacing: 	50px 0px;
+  border-spacing: 	0px 0px;
   margin-left:		auto; 
   margin-right:		auto; 
+  /*margin-left:		20px; */
 }
 
 span.fade {
@@ -57,7 +62,6 @@ span.fade {
 span.stark {
   color:		#000;
 }
-
 
 #container {
   background:		#63737e; 
@@ -86,12 +90,17 @@ span.stark {
 #footer {
   position:		relative;
   background:		transparent url(images/footer.png) no-repeat top left;
-  padding-top:		3em;
-  padding-bottom:	3em;
+  padding-top:		2em;
+  padding-bottom:	2em;
   text-align:		center;
   text-transform: 	uppercase;
   font-size:		10px;
 }
+
+  #footer ul li {
+    display:            inline;
+    margin-right:       1em;
+  }
 
 #quickSummary {
   padding-right:	70px;
@@ -140,6 +149,6 @@ span.stark {
 
 .mono {
   font:			normal 9pt/1.5 monospace;
-  margin:		0px 40px;
+  margin-left:		20px;
 }
 
