@@ -52,7 +52,9 @@ table {
 
 img.cover {
   float:                left;
-  margin:               1ex;
+  margin-top:           1ex;
+  margin-bottom:        1ex;
+  margin-right:         2ex;
   height:               6em;
 }
 
