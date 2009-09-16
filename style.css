@@ -32,10 +32,6 @@ p {
   margin:		1.5em 0em;
 }
 
-blockquote {
-  margin:		1.5em;
-}
-
 a { 
   text-decoration: 	none; 
   color: 		#7F7F7F;
@@ -54,12 +50,41 @@ table {
   /*margin-left:		20px; */
 }
 
-span.fade {
-  color:		#aaa;
+img.cover {
+  float:                left;
+  margin:               1ex;
+  height:               6em;
 }
 
-span.stark {
-  color:		#000;
+ul.bib {
+  list-style-type:      none;
+}
+
+  ul.bib li.title {
+    font-style:         italic;
+  }
+
+  ul.bib li.title a {
+    font-style:         normal;
+  }
+
+  ul.bib li.howpub {
+  }
+
+  ul.bib li.coauthors {
+  }
+
+  ul.bib li.abstract {
+   margin-top:          1em;          
+   margin-left:         -1.5em;
+   margin-bottom:       1.5em;
+  }
+
+span.coauthors {
+}
+
+span.fade {
+  color:		#aaa;
 }
 
 #container {
@@ -106,18 +131,19 @@ span.stark {
 }
 
 #display {
+  border:               1px solid #fff;
   position:             relative;
   margin-left: 		auto;
   margin-right: 	auto;
   margin-top:		30px;
-  padding:		5px 5px 0px 5px;
   background:		#000;
   color:                #fff;
-  width:                399px;
+  width:                419px;
   text-align:		center;
 }
 
   #display img {
+    margin:		10px 5px 5px 5px;
     border:             none;
   }
 
@@ -132,10 +158,10 @@ span.stark {
   }
 
   #display .caption {
-    border-top:         1px solid #999;
+    border-top:         1px solid #aaa;
     font:		normal 9pt/1.5 monospace;
     text-align:         center;
-    width:              399px;
+    width:              419px;
     z-index:            10;
     background:         #000;   
     color:              #fff;   
@@ -146,17 +172,6 @@ span.stark {
   #display .caption .content {  
     margin:             1ex;
   }
-
-#filebrowser {
-  background:		#191919;
-  margin-left: 		auto;
-  margin-right: 	auto;
-  margin-top:		30px;
-  width:		400px;
-  padding:		10px 10px 10px 10px;
-  color:		#aaa;
-  text-align:		center;
-}
 
 .mono {
   font:			normal 9pt/1.5 monospace;
