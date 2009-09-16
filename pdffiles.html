@@ -13,8 +13,9 @@
 
   <title>Florent Kirchner</title>
 
-  <!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
-  <script type="text/javascript"></script>
+  <!-- Let's do something fancy --> 
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+  <script type="text/javascript" src="scripts/caption.js"></script>
   
   <!-- to mask the stylesheet for non-css browsers -->
   <style type="text/css" media="all">
@@ -26,26 +27,24 @@
 
 <body onload="window.defaultStatus='Florent Kirchner'">
 
-<div id="filebrowser">
-  <table>
-  <tr> 
-  <td><a href="data/cv.fr.pdf" title="French resume.">
-  <img border="0" src="images/cvthumb.png" alt="[ee]" />
-  </a></td>
-  <td><a href="data/cv.en.pdf" title="English resume.">
-  <img border="0" src="images/cvthumb.png" alt="[ee]" />
-  </a></td>
-  </tr>
-  <tr><td>lang:fr</td><td>lang:en</td></tr>
-  </table> <br />
+  <div id="display">
+    <table>
+    <tr> 
+    <td><a href="data/cv.fr.pdf" title="French resume.">
+    <img border="0" src="images/cvthumb.png" alt="[ee]" />
+    </a></td>
+    <td><a href="data/cv.en.pdf" title="English resume.">
+    <img border="0" src="images/cvthumb.png" alt="[ee]" />
+    </a></td>
+    </tr>
+    <tr><td>french</td><td>english</td></tr>
+    </table> <br />
 
-  <div class="mono">
-    <span class="stark">
-    2 files, 152K total <br />
-    PDF documents version 1.4. 
-    </span>
+    <div class="caption"><div class="content"> 
+      2 files, 73KiB each <br />
+      PDF documents, version 1.4.
+    </div></div>
   </div>
-</div>
 
 </body>
 </html>
