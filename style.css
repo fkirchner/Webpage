@@ -90,6 +90,7 @@ span.fade {
 }
 
 #container {
+  position:             relative;
   background:		#63737e; 
   width:		670px;
   margin-left: 		auto;
