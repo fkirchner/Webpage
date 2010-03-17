@@ -161,7 +161,7 @@ span.fade {
 
   #display .caption {
     border-top:         1px solid #aaa;
-    font:		normal 9pt/1.5 monospace;
+    font:		normal 9pt/1.5 "Courier New";
     text-align:         center;
     width:              419px;
     z-index:            10;
@@ -176,7 +176,7 @@ span.fade {
   }
 
 .mono {
-  font:			normal 9pt/1.5 monospace;
+  font:			normal 9pt/1.5 "Courier new";
   margin-left:		20px;
 }
 
