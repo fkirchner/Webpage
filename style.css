@@ -5,14 +5,14 @@
 body {
   background:		#222;
   margin:		0px;
-  font:			normal 12px/1.5 serif;
+  font:			normal 12px/1.5 sans-serif;
+  font-family:		helvetica;
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/ /*These are a bit early*/
 }
 
 h2 {
-  font-family:		serif;
-  text-shadow:          white 0em 0em 0.1em;
+  text-shadow:          white 0em 0em 0.5em;
   line-height:		1;
   margin-top:		1em;
   margin-bottom:	1em
@@ -20,16 +20,14 @@ h2 {
 
 h3 {
   /*text-align:		center;*/
-  font-family:		serif;
-  text-shadow:          white 0em 0em 0.1em;
+  text-shadow:          white 0em 0em 0.5em;
   line-height:		1.286;
-  margin-top:		1.286em;
-  margin-bottom:	1.286em
-  /*padding-bottom:	5px;*/
+  /*margin-top:		1.286em;
+  margin-bottom:	-0.643em;*/
 }
 
 p {
-  margin:		1.5em 0em;
+  /*margin:		1.286em 0em;*/
 }
 
 a { 
@@ -51,6 +49,8 @@ table {
 }
 
 img.cover {
+  -webkit-box-shadow:   #444 0px 3px 0.3em;
+  -moz-box-shadow:      #444 0px 3px 0.3em;
   float:                left;
   margin-top:           1ex;
   margin-bottom:        1ex;
@@ -98,7 +98,6 @@ span.fade {
 }
 
 #header {
-  font-family:		arial;
   position:		relative;
   background:		#eeeff0 url(images/header.png) no-repeat top left;
   height:		150px;
@@ -107,7 +106,6 @@ span.fade {
 }
 
 #textzone {
-  font-family:		arial;
   position:		relative;
   background:		#eeeff0 url(images/textBackground.png) repeat-y top left;
   color:		#444;
@@ -132,6 +130,7 @@ span.fade {
 #quickSummary {
   padding-right:	70px;
 }
+
 
 #display {
   border:               1px solid #fff;
