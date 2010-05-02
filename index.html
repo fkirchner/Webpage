@@ -9,16 +9,19 @@
   <meta name="author" content="Hikitech" />
   <meta name="keywords" content="florent kirchner, fsp, fellowship, formal methods, proof languages, air traffic control, inria, sri, nasa, nia, hikitech" />
   <meta name="description" content="Postdoctoral fellow in theoretical computer science at SRI International with an interest in proof languages and interoperable proof systems." />
-  <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <[endif]-->
   <meta name="robots" content="all" />
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> <!-- www.space-invaders.com -->
+  <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <[endif]-->
+
+  <!-- Inspired by www.space-invaders.com -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> 
 
   <title>Florent Kirchner</title>
 
-  <!-- to correct the unsightly Flash of Unstyled Content. http://www.bluerobot.com/web/css/fouc.asp -->
+  <!-- Correct the unsightly Flash of Unstyled Content. 
+       http://www.bluerobot.com/web/css/fouc.asp -->
   <script type="text/javascript"></script>
   
-  <!-- to mask the stylesheet for non-css browsers -->
+  <!-- Mask the stylesheet for non-css browsers -->
   <style type="text/css" media="all">
 	  @import "style.css";
   </style>
@@ -31,27 +34,31 @@
 <div id="container">
 
   <div id="header">
-    <h2><span class="fade"><abbr title="Hikitech.">hkt</abbr>:</span> 
+
+    <h2><span class="fade"><abbr title="Hikitech">hkt</abbr>:</span> 
       Florent Kirchner</h2>
     <div id="quickSummary">
       <p>
       Hey there. I am a post-doctoral fellow drawn to theoretical and applied
       research in computer science. I am working in the fields of <em>formal
       methods</em> and <em>software security</em>. More specifically I am
-      interested in the rich interaction between proof systems, the design of
-      proof languages and in deduction modulo.
+      interested in deduction modulo, in proof systems interactions, in
+      language design, and in formal system analysis.
       </p>
     </div>
+
   </div>
 
   <div id="textzone">
-    <div>
-      For more information, you are welcome to review my resume <a
-      href="http://careers.stackoverflow.com/florent-kirchner" title="StackOverflow Public CV.">online</a> 
-      or as a <a href="pdffiles.html" title="Localized curriculums for offline reference and printing.">pdf file</a>.
 
-      Or even &mdash; holy sociability Batman! &mdash; try <a
-      href="visual.html">eye-contact</a> and go for a talk.
+  <div>
+      For more information, you are welcome to review my resume <a
+      href="http://careers.stackoverflow.com/florent-kirchner"
+      title="StackOverflow Public CV.">online</a>, or email me for a printable
+      version.
+
+      You might even &mdash; holy socializing Batman! &mdash; <a
+      href="visual.html">make visual</a> and go for a talk.
     </div>
 
     <div id="publications">
@@ -59,12 +66,33 @@
       <h3>Notes and Publications</h3>
       
       <p>
-      This section regroups my recent bibliography with links to <abbr
-      title="TeX bibliographical database entries.">bibtex</abbr> reference
+      This section regroups my recent bibliography, with links to <abbr
+      title="TeX bibliographical database entries">bibtex</abbr> reference
       files and electronic editions when available. An exhaustive list of
       papers, organized by referring type, is available <a
       href="papersLong.html" title="Collection of all published papers.">here</a>.
       </p>
+
+      <img class="cover" src="images/cover_jlap.png" alt="Book cover." />
+      <ul class="bib">
+      <li class="title">The Proof Monad.
+      <a href="data/proofmonad2010.pdf">[ee]</a> 
+      <a href="data/proofmonad2010.bib">[bib]</a> </li>
+      <li class="howpub">The Journal of Logic and Algebraic Programming, 
+      Volume 79, Issues 3-5, 2010.</li>
+      <li class="coauthors">with C&eacute;sar Mu&ntilde;oz</li>
+      <li class="abstract">
+      A formalism for expressing the operational semantics of proof languages
+      used in procedural theorem provers is proposed. It is argued that this
+      formalism provides an elegant way to describe the computational features
+      of proof languages, such as side effects, exception handling, and
+      backtracking. The formalism, called proof monads, finds its roots in
+      category theory, and in particular satisfies the monad laws. It is shown
+      that the framework’s monadic operators are related to fundamental tactics
+      and strategies in procedural theorem provers. Finally, the paper
+      illustrates how proof monads can be used to implement semantically clean
+      control structure mechanisms in actual proof languages.</li>
+      </ul>
 
       <img class="cover" src="images/cover_wflp10.jpg" alt="Book cover." />
       <ul class="bib">
@@ -105,33 +133,12 @@
       needed to transparently provide such support.</li>
       </ul>
 
-      <img class="cover" src="images/cover_reasoning.jpg" alt="Book cover." />
-      <ul class="bib">
-      <li class="title">Strategic Computations and Deductions.
-      <a href="data/festschrift2008.pdf">[ee]</a> 
-      <a href="data/festschrift2008.bib">[bib]</a> </li>
-      <li class="howpub">Reasoning in Simple Type Theory, 
-      volume 17 of Mathematical Logic and Foundations, 2008.</li>
-      <li class="coauthors">with H&eacute;l&egrave;ne Kirchner 
-      and Claude Kirchner</li>
-      <li class="abstract">
-      In this paper we are contributing to the theoretical foundations of
-      strategies and to the convergence of different points of view, namely
-      rewriting-based computations on one hand, rule-based deduction and
-      proof-search on the other hand. We will rely on previous works and
-      strategy languages that have been recently designed and studied.  In
-      rewriting, from elementary strategies expressions directly issued from a
-      term rewriting system R, more elaborated strategies expressions can be
-      built using a strategy language. A similar mechanism also exists in proof
-      systems, where a set of core strategies is used to program sophisticated
-      proof search patterns.</li>
-      </ul>
-
       <p>
-      More recent, yet-unpublished work include a journal article on the
-      structure of dynamic proof interaction and a conference note on the
-      design of a distributed proof system.
+      More recent, yet-unpublished work include an article on secure program
+      analysis and a conference note on the design of a distributed proof
+      system.
       </p>
+
     </div>
 
     <div id="software">
@@ -139,31 +146,40 @@
       <h3>Software and Proofs</h3>
       
       <p>
-      The Evidential Tool Bus takes a novel approach towards formal
-      verification tools composition and interoperability, by relying on
-      asynchronous message passing with a unified proof data store. This work
-      was carried out during my postdoctoral visit at SRI International, and
-      hasn't been made public yet.
+      With applications that range from quantitative program analysis to safety
+      of <abbr title="Air traffic control">ATC</abbr> algorithms, decision
+      methods for the existential theory of reals make a growingly important
+      class of tools for interactive and automatic theorem provers. The <abbr
+      title="Extended claude database">ECDB</abbr> is a centralized data store
+      that is designed to allow the sharing and incremental certification, by
+      external provers, of complex proofs in real algebra generated by <a
+      href="http://homepages.inf.ed.ac.uk/s0793114/rahd/">RAHD</a>. It is
+      currently work in progress, and can be previewed by checking out the
+      <span class="mono">rahd+ecdb</span> branch of the RAHD <a
+      href="http://code.google.com/p/rahd/">repository</a>.
       </p>
 
       <p>
-      <em>fsp</em> is a prototype proof assistant using sequent calculus logics
-      and proof terms. It is designed to generate proof scripts for other
-      formal tools, such as <abbr 
-      title="The Coq proof assistant, based on the calculus of inductive constructions.">
-      Coq</abbr> and <abbr 
-      title="SRI's Prototype Verification Software.">PVS</abbr>. More
-      information, and download
-      options, are found on its <a
-      href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/trunk/index.html">website</a>.
+      The Evidential Tool Bus takes a novel approach towards formal
+      verification tools composition and interoperability, by relying on
+      asynchronous message passing with a unified proof data structure.
+      Prototyping work was carried out during my postdoctoral visit at SRI
+      International, there are no immediate plans to make it public.
       </p>
-      
+
       <p>
-      A library of real closed fields has been developped for fsp, using
-      results in the theory of classes to encode second-order formulas in the
-      prover's first-order framework. The documented specifications and proofs
-      can be downloaded <a
-      href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/index.html">here</a>.
+      <abbr title="Fellowship"><em>fsp</em></abbr> is a proof
+      assistant using sequent calculus logics and proof terms. It is designed
+      to generate proof scripts for other formal tools, such as <abbr
+      title="The Coq proof assistant"> Coq</abbr> and <abbr title="SRI's
+      Prototype Verification Software">PVS</abbr>. More information, and
+      download options, are found on its <a
+      href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/trunk/index.html">website</a>.
+      A library of real closed fields has been developped for <em>fsp</em>,
+      using results built from von Neumann, Gödel and Bernays' theory of
+      classes to encode second-order formulas in the prover's first-order
+      framework.  Documented specifications and proofs are also available <a
+      href="http://www.lix.polytechnique.fr/Labo/Florent.Kirchner/fellowship/trunk/index.html">online</a>.
       </p>
 
       <p>
@@ -172,6 +188,7 @@
       prover. Its implementation is based on a categorical construction,
       encoded as a datatype and associated functions, called a proof monad.
       </p>
+
     </div>
 
     <div id="contact">
@@ -191,14 +208,14 @@
       
       <p>
       If you'd rather go digital, here is my electronic mail address, as a <abbr
-      title="The list programming language."> Lisp</abbr> function:
+      title="The list processing language."> Lisp</abbr> form:
       </p>
       <div class="mono">
       (format nil "~a@~a" "florent.kirchner" "lix.polytechnique.fr") <br />
       (format nil "~a@~a" "florent.kirchner" "irisa.fr")
       </div>
       <p>
-      For all intents and purposes, my <abbr title="Gnu privacy guard.">
+      For all intents and purposes, my <abbr title="Gnu privacy guard">
       GPG</abbr> key is available on the 
       <a href="http://pgp.mit.edu/">MIT servers</a>, and <a
       href="data/florentKirchner.gpg">locally</a>.
@@ -218,6 +235,7 @@
       </p>
 
     </div>
+
   </div>
 
   <div id="footer">

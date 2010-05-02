@@ -1,5 +1,6 @@
 /* vim: set sw=2 : */
 
+/* Color palette at colorschemedesigner.com/#3w61T7koEw0w0 */
 /* Validate this file at CSS level 3 */
 
 body {
@@ -7,23 +8,21 @@ body {
   margin:		0px;
   font:			normal 12px/1.5 sans-serif;
   font-family:		helvetica;
+  /* These are still a bit early for now */
   /*hyphenate: 		auto;
-  hyphenate-lines: 	3;*/ /*These are a bit early*/
+  hyphenate-lines: 	3;*/
 }
 
 h2 {
-  text-shadow:          white 0em 0em 0.5em;
+  text-shadow:          #fff 1px 1px 0.1em;
   line-height:		1;
   margin-top:		1em;
-  margin-bottom:	1em
+  margin-bottom:	1em;
 }
 
 h3 {
-  /*text-align:		center;*/
-  text-shadow:          white 0em 0em 0.5em;
+  text-shadow:          #fff 1px 1px 0.1em;
   line-height:		1.286;
-  /*margin-top:		1.286em;
-  margin-bottom:	-0.643em;*/
 }
 
 p {
@@ -32,7 +31,8 @@ p {
 
 a { 
   text-decoration: 	none; 
-  color: 		#7F7F7F;
+  color: 		#92817a;
+  color: 		#804631;
 }
 
 a.footer { 
@@ -41,16 +41,20 @@ a.footer {
   color: 		#222;
 }
 
+abbr {
+  border-bottom:        none;
+  cursor:               help;
+}
+
 table {
   border-spacing: 	0px 0px;
   margin-left:		auto; 
   margin-right:		auto; 
-  /*margin-left:		20px; */
 }
 
 img.cover {
-  -webkit-box-shadow:   #444 0px 3px 0.3em;
-  -moz-box-shadow:      #444 0px 3px 0.3em;
+  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
+  -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
   float:                left;
   margin-top:           1ex;
   margin-bottom:        1ex;
@@ -86,7 +90,7 @@ span.coauthors {
 }
 
 span.fade {
-  color:		#aaa;
+  color:		#a8b5bf;
 }
 
 #container {
@@ -101,14 +105,14 @@ span.fade {
   position:		relative;
   background:		#eeeff0 url(images/header.png) no-repeat top left;
   height:		150px;
-  color:		#444;
+  color:		#4f585e;
   padding:		60px 80px 0px 80px;
 }
 
 #textzone {
   position:		relative;
   background:		#eeeff0 url(images/textBackground.png) repeat-y top left;
-  color:		#444;
+  color:		#4f585e;
   padding:		0px 80px 12px 80px;
 }
 
@@ -155,8 +159,8 @@ span.fade {
   }
 
   #display table td {
-    padding-right:             5ex;
-    padding-left:              5ex;
+    padding-right:      5ex;
+    padding-left:       5ex;
   }
 
   #display .caption {
@@ -177,6 +181,5 @@ span.fade {
 
 .mono {
   font:			normal 9pt/1.5 "Courier new";
-  margin-left:		20px;
 }
 
