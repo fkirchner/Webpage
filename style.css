@@ -1,13 +1,12 @@
 /* vim: set sw=2 : */
 
-/* Color palette at colorschemedesigner.com/#3w61T7koEw0w0 */
+/* Color palette at colorschemedesigner.com/#3w61T7koEw0w0 (triad) */
 /* Validate this file at CSS level 3 */
 
 body {
-  background:		#222;
+  background:		#333;
   margin:		0px;
-  font:			normal 12px/1.5 sans-serif;
-  font-family:		helvetica;
+  font:			normal 14px/1.5 Helvetica,Geneva,Arial,sans-serif;
   /* These are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
@@ -31,14 +30,13 @@ p {
 
 a { 
   text-decoration: 	none; 
-  color: 		#92817a;
   color: 		#804631;
 }
 
 a.footer { 
   font-weight: 		bold; 
   text-decoration:	none; 
-  color: 		#222;
+  color: 		#333;
 }
 
 abbr {
@@ -50,6 +48,24 @@ table {
   border-spacing: 	0px 0px;
   margin-left:		auto; 
   margin-right:		auto; 
+}
+
+img#doodle {
+  position:             absolute;
+  right:                40px;
+  top:                  0;
+  width:                70px;
+  border:               none;
+  -webkit-box-shadow:   #a8b5bf 1px 1px 0.1em;
+  -moz-box-shadow:      #a8b5bf 1px 1px 0.1em;
+}
+
+img.simplecover {
+  float:                left;
+  margin-top:           1ex;
+  margin-bottom:        1ex;
+  margin-right:         2ex;
+  height:               6em;
 }
 
 img.cover {
@@ -96,34 +112,35 @@ span.fade {
 #container {
   position:             relative;
   background:		#63737e; 
-  width:		670px;
+  width:		800px;
   margin-left: 		auto;
   margin-right: 	auto;
-}
-
-#header {
-  position:		relative;
-  background:		#eeeff0 url(images/header.png) no-repeat top left;
-  height:		150px;
-  color:		#4f585e;
-  padding:		60px 80px 0px 80px;
+  padding:              70px 80px 0px 80px;
+  background:		-moz-linear-gradient(top, #7c8f9d, #63737e 200px); 
+  background:		-webkit-gradient(linear, left top, 0 200, from(#7c8f9d), to(#63737e)); 
 }
 
 #textzone {
   position:		relative;
-  background:		#eeeff0 url(images/textBackground.png) repeat-y top left;
+  background-color:     rgba(238,239,240,0.85);
   color:		#4f585e;
-  padding:		0px 80px 12px 80px;
+  padding:		20px 40px 20px 40px;
+  border-left:          1px solid white;
+  border-top:           1px solid white;
+  -moz-border-radius:   2px;
+  -webkit-border-radius:2px;
+  -moz-box-shadow:      #333 5px 5px 1em;
+  -webkit-box-shadow:   #333 5px 5px 1em;
 }
 
 #footer {
   position:		relative;
-  background:		transparent url(images/footer.png) no-repeat top left;
+  background-color:	transparent;
   padding-top:		2em;
   padding-bottom:	2em;
   text-align:		center;
   text-transform: 	uppercase;
-  font-size:		10px;
+  font-size:		11px;
 }
 
   #footer ul li {
@@ -132,27 +149,29 @@ span.fade {
   }
 
 #quickSummary {
-  padding-right:	70px;
+  padding-right:	110px;
 }
 
+.mono {
+  font:			normal 11pt/1.5 "Courier new",fixed;
+}
+
+/*
+ * The following is only used in Visual.
+ */
 
 #display {
-  border:               1px solid #fff;
-  position:             relative;
-  margin-left: 		auto;
-  margin-right: 	auto;
-  margin-top:		30px;
-  background:		#000;
-  color:                #fff;
-  width:                419px;
-  text-align:		center;
 }
 
   #display img {
-    margin:		10px 5px 5px 5px;
-    border:             none;
+    margin-top: 	30px;
+    margin-bottom: 	30px;
+    margin-left: 	auto;
+    margin-right: 	auto;
+    display:            block;
   }
 
+  /* Deprecated */
   #display table {
     margin-top:         5ex;
     margin-bottom:      10ex;
@@ -178,8 +197,4 @@ span.fade {
   #display .caption .content {  
     margin:             1ex;
   }
-
-.mono {
-  font:			normal 9pt/1.5 "Courier new";
-}
 
