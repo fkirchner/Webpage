@@ -1,13 +1,22 @@
-/* vim: set sw=2 : */
-
 /* Color palette at colorschemedesigner.com/#3w61T7koEw0w0 (triad) */
 /* Validate this file at CSS level 3 */
+
+@font-face {
+  font-family:          MrJonesBook;
+  src:                  url("fonts/MrJonesBook.otf") format("opentype");
+}
+
+@font-face {
+  font-family:          MrJonesBook;
+  src:                  url("fonts/MrJonesBookItalic.otf") format("opentype");
+  font-style:           italic;
+}
 
 body {
   background:		#333;
   margin:		0px;
-  font:			normal 14px/1.5 Helvetica,Geneva,Arial,sans-serif;
-  /* These are still a bit early for now */
+  font:			normal 14px/1.5 "Alpha Regular",Helvetica,Geneva,Arial,sans-serif;
+  /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
 }
@@ -44,11 +53,51 @@ abbr {
   cursor:               help;
 }
 
-table {
-  border-spacing: 	0px 0px;
-  margin-left:		auto; 
-  margin-right:		auto; 
+div#address {
+/*  text-shadow:          #fff 1px 1px 0.1em; */
+/*  background-color:     #333; #63737e; rgba(248,249,250,1); */
+  padding:              10px 10px 10px 90px;
+  -moz-border-radius:   3px;
+  -webkit-border-radius:3px;
+  /*-moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
+  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;*/
 }
+
+div#paperpigmentmail {
+  display:              block;
+  position:             relative;
+  float:                left;
+  padding-right:        1ex;
+  border-right:         1px solid #333;
+}
+
+  div#paperpigmentmail table {
+    border-spacing: 	0px 0px;
+    text-align:         right;
+  }
+
+div#phonenumber {
+  display:              block;
+  position:             relative;
+  float:                left;
+  font-size:            10px;
+  text-align:           center;
+  -webkit-transform:    rotate(-90deg) translate(-4em,6em); 
+  -moz-transform:       rotate(-90deg) translate(-4em,6em);	
+}
+
+div#digitalmail {
+  display:              block;
+  position:             relative;
+  float:                left;
+  margin-top:           0.8em;
+  padding-left:         1ex;
+}
+
+  div#digitalmail table {
+    border-spacing: 	0px 0px;
+    text-align:         left;
+  }
 
 img#doodle {
   position:             absolute;
@@ -56,8 +105,8 @@ img#doodle {
   top:                  0;
   width:                70px;
   border:               none;
-  -webkit-box-shadow:   #a8b5bf 1px 1px 0.1em;
-  -moz-box-shadow:      #a8b5bf 1px 1px 0.1em;
+  -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
+  -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
 }
 
 img.simplecover {
@@ -69,13 +118,13 @@ img.simplecover {
 }
 
 img.cover {
-  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
-  -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
   float:                left;
   margin-top:           1ex;
   margin-bottom:        1ex;
   margin-right:         2ex;
   height:               6em;
+  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
+  -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
 }
 
 ul.bib {
@@ -152,8 +201,16 @@ span.fade {
   padding-right:	110px;
 }
 
+.clear {
+  clear:                both;
+}
+
 .mono {
-  font:			normal 11pt/1.5 "Courier new",fixed;
+  font:			normal 14px/1.5 "Courier new",fixed;
+}
+
+.sc {
+  font-variant:	        small-caps;
 }
 
 /*
@@ -198,3 +255,4 @@ span.fade {
     margin:             1ex;
   }
 
+/* vim: set sw=2 : */
