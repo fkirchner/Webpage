@@ -15,7 +15,7 @@
 body {
   background:		#333;
   margin:		0px;
-  font:			normal 14px/1.5 "Alpha Regular",Helvetica,Geneva,Arial,sans-serif;
+  font:			normal 14px/1.5 "Alpha Regular",Helvetica,Geneva,sans-serif;
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
@@ -134,12 +134,22 @@ ul.bib {
 
   ul.bib li.title {
     font-style:         italic;
+    display:            inline;
   }
 
-  ul.bib li.title a {
-    font-style:         normal;
-  }
+    ul.bib li.title a {
+      font-style:       normal;
+    }
 
+    ul.bib li.title:before {
+      /*content:          " \2027 \0020";*/
+    }
+
+  ul.bib li.event {
+    text-shadow:        #fff 1px 1px 0.1em;
+    display:            inline;
+  }
+  
   ul.bib li.howpub {
   }
 
@@ -150,9 +160,6 @@ ul.bib {
    margin-top:          1em;          
    margin-bottom:       1.5em;
   }
-
-span.coauthors {
-}
 
 span.fade {
   color:		#a8b5bf;
@@ -190,6 +197,7 @@ span.fade {
   text-align:		center;
   text-transform: 	uppercase;
   font-size:		11px;
+  color: 		#333;
 }
 
   #footer ul li {
