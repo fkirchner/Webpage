@@ -77,7 +77,7 @@ div#paperpigmentmail {
   }
 
 div#phonenumber {
-  display:              block;
+  display:              none; block;
   position:             relative;
   float:                left;
   font-size:            10px;
@@ -103,7 +103,7 @@ img#doodle {
   position:             absolute;
   right:                40px;
   top:                  0;
-  width:                70px;
+  width:                60px;
   border:               none;
   -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
   -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
@@ -206,7 +206,7 @@ span.fade {
   }
 
 #quickSummary {
-  padding-right:	110px;
+  padding-right:	100px;
 }
 
 .clear {
