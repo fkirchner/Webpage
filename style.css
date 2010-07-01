@@ -16,6 +16,7 @@ body {
   background:		#333;
   margin:		0px;
   font:			normal 14px/1.5 "Alpha Regular",Helvetica,Geneva,sans-serif;
+  text-rendering:       optimizeLegibility;
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
