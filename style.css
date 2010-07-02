@@ -32,6 +32,7 @@ h2 {
 h3 {
   text-shadow:          #fff 1px 1px 0.1em;
   line-height:		1.286;
+  margin-top:		2em;
 }
 
 p {
@@ -55,11 +56,15 @@ abbr {
 }
 
 div#address {
-/*  text-shadow:          #fff 1px 1px 0.1em; */
-/*  background-color:     #333; #63737e; rgba(248,249,250,1); */
+  text-shadow:          #fff 1px 1px 0.1em;
+  background-color:     rgba(238,239,240,0.3);#a8b5bf; #333; #63737e; rgba(248,249,250,1); 
   padding:              10px 10px 10px 90px;
   -moz-border-radius:   3px;
   -webkit-border-radius:3px;
+  border-right:         1px solid white;
+  border-bottom:        1px solid white;
+  border-left:          1px solid #a8b5bf;
+  border-top:           1px solid #a8b5bf;
   /*-moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
   -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;*/
 }
@@ -69,7 +74,7 @@ div#paperpigmentmail {
   position:             relative;
   float:                left;
   padding-right:        1ex;
-  border-right:         1px solid #333;
+  border-right:         1px solid #4f585e;
 }
 
   div#paperpigmentmail table {
