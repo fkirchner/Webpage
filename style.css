@@ -1,4 +1,12 @@
 /* Color palette at colorschemedesigner.com/#3w61T7koEw0w0 (triad) */
+/* Grid:    width=800px
+ *          left/right margin=37px
+ *          top margin=90px
+ *          columns=10/60px
+ *          column gutter=1em(14px)
+ *          rows=1em
+ *          rows gutter=0.5em   
+ */
 /* Validate this file at CSS level 3 */
 
 @font-face {
@@ -31,8 +39,9 @@ h2 {
 
 h3 {
   text-shadow:          #fff 1px 1px 0.1em;
-  line-height:		1.286;
+  line-height:		1;
   margin-top:		2em;
+  margin-bottom:	1em;
 }
 
 p {
@@ -58,13 +67,13 @@ abbr {
 div#address {
   text-shadow:          #fff 1px 1px 0.1em;
   background-color:     rgba(238,239,240,0.3);#a8b5bf; #333; #63737e; rgba(248,249,250,1); 
-  padding:              10px 10px 10px 90px;
-  -moz-border-radius:   3px;
-  -webkit-border-radius:3px;
+  padding:              10px 10px 10px 77px;
   border-right:         1px solid white;
   border-bottom:        1px solid white;
   border-left:          1px solid #a8b5bf;
   border-top:           1px solid #a8b5bf;
+  -moz-border-radius:   3px;
+  -webkit-border-radius:3px;
   /*-moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
   -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;*/
 }
@@ -73,7 +82,7 @@ div#paperpigmentmail {
   display:              block;
   position:             relative;
   float:                left;
-  padding-right:        1ex;
+  padding-right:        0.5em;
   border-right:         1px solid #4f585e;
 }
 
@@ -97,7 +106,7 @@ div#digitalmail {
   position:             relative;
   float:                left;
   margin-top:           0.8em;
-  padding-left:         1ex;
+  padding-left:         0.5em;
 }
 
   div#digitalmail table {
@@ -107,7 +116,7 @@ div#digitalmail {
 
 img#doodle {
   position:             absolute;
-  right:                40px;
+  right:                37px;
   top:                  0;
   width:                60px;
   border:               none;
@@ -119,16 +128,18 @@ img.simplecover {
   float:                left;
   margin-top:           1ex;
   margin-bottom:        1ex;
-  margin-right:         2ex;
-  height:               6em;
+  margin-right:         1em;
+  /*height:               6em;*/
+  width:                60px;
 }
 
 img.cover {
   float:                left;
   margin-top:           1ex;
   margin-bottom:        1ex;
-  margin-right:         2ex;
-  height:               6em;
+  margin-right:         1em;
+  /*height:               6em;*/
+  width:                60px;
   -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
   -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
 }
@@ -186,7 +197,7 @@ span.fade {
   position:		relative;
   background-color:     rgba(238,239,240,0.85);
   color:		#4f585e;
-  padding:		20px 40px 20px 40px;
+  padding:		20px 37px 20px 37px;
   border-left:          1px solid white;
   border-top:           1px solid white;
   -moz-border-radius:   2px;
@@ -198,8 +209,8 @@ span.fade {
 #footer {
   position:		relative;
   background-color:	transparent;
-  padding-top:		2em;
-  padding-bottom:	2em;
+  padding-top:		20px;
+  padding-bottom:	20px;
   text-align:		center;
   text-transform: 	uppercase;
   font-size:		11px;
@@ -212,7 +223,8 @@ span.fade {
   }
 
 #quickSummary {
-  padding-right:	100px;
+  padding-right:        74px;
+  padding-bottom:       0.5em;
 }
 
 .clear {
