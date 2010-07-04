@@ -9,21 +9,10 @@
  */
 /* Validate this file at CSS level 3 */
 
-@font-face {
-  font-family:          MrJonesBook;
-  src:                  url("fonts/MrJonesBook.otf") format("opentype");
-}
-
-@font-face {
-  font-family:          MrJonesBook;
-  src:                  url("fonts/MrJonesBookItalic.otf") format("opentype");
-  font-style:           italic;
-}
-
 body {
   background:		#333;
   margin:		0px;
-  font:			normal 14px/1.5 "Alpha Regular",Helvetica,Geneva,sans-serif;
+  font:			normal 14px/1.5 "Linear Regular",Helvetica,Geneva,sans-serif;
   text-rendering:       optimizeLegibility;
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
@@ -35,11 +24,13 @@ h2 {
   line-height:		1;
   margin-top:		1em;
   margin-bottom:	1em;
+  font-family:          "Handbook Pro Regular",Helvetica,Geneva,sans-serif;
 }
 
 h3 {
   text-shadow:          #fff 1px 1px 0.1em;
   line-height:		1;
+  font-family:          "Handbook Pro Regular",Helvetica,Geneva,sans-serif;
   margin-top:		2em;
   margin-bottom:	1em;
 }
@@ -64,9 +55,103 @@ abbr {
   cursor:               help;
 }
 
+span.fade {
+  color:		#a8b5bf;
+}
+
+.mono {
+  font:			normal 14px/1.5 "Courier new",fixed;
+}
+
+.sc {
+  font-variant:	        small-caps;
+}
+
+img#doodle {
+  position:             absolute;
+  right:                37px;
+  top:                  0;
+  width:                60px;
+  border:               none;
+  -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
+  -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
+}
+
+img.simplecover {
+  float:                left;
+  margin-top:           1ex;
+  margin-bottom:        1ex;
+  margin-right:         1em;
+  width:                60px;
+}
+
+img.cover {
+  float:                left;
+  margin-top:           1ex;
+  margin-bottom:        1ex;
+  margin-right:         1em;
+  width:                60px;
+  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
+  -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
+}
+
+ul.bib {
+  list-style-type:      none;
+  padding:              0px;
+}
+
+  ul.bib li.title {
+    font-style:         italic;
+    display:            inline;
+  }
+
+    ul.bib li.title a {
+      font-style:       normal;
+  }
+  
+  ul.bib li.howpub {
+  }
+
+  ul.bib li.coauthors {
+  }
+
+  ul.bib li.abstract {
+   margin-top:          1em;          
+   margin-bottom:       1.5em;
+  }
+
+div#container {
+  position:             relative;
+  background:		#63737e; 
+  width:		800px;
+  margin-left: 		auto;
+  margin-right: 	auto;
+  padding:              70px 80px 0px 80px;
+  background:		-moz-linear-gradient(top, #7c8f9d, #63737e 200px); 
+  background:		-webkit-gradient(linear, left top, 0 200, from(#7c8f9d), to(#63737e)); 
+}
+
+div#textzone {
+  position:		relative;
+  background-color:     rgba(238,239,240,0.85);
+  color:		#4f585e;
+  padding:		20px 37px 20px 37px;
+  border-left:          1px solid white;
+  border-top:           1px solid white;
+  -moz-border-radius:   2px;
+  -webkit-border-radius:2px;
+  -moz-box-shadow:      #333 5px 5px 1em;
+  -webkit-box-shadow:   #333 5px 5px 1em;
+}
+
+div#quickSummary {
+  padding-right:        74px;
+  padding-bottom:       0.5em;
+}
+
 div#address {
   text-shadow:          #fff 1px 1px 0.1em;
-  background-color:     rgba(238,239,240,0.3);#a8b5bf; #333; #63737e; rgba(248,249,250,1); 
+  background-color:     rgba(238,239,240,0.3);
   padding:              10px 10px 10px 77px;
   border-right:         1px solid white;
   border-bottom:        1px solid white;
@@ -92,7 +177,7 @@ div#paperpigmentmail {
   }
 
 div#phonenumber {
-  display:              none; block;
+  display:              none;
   position:             relative;
   float:                left;
   font-size:            10px;
@@ -114,99 +199,11 @@ div#digitalmail {
     text-align:         left;
   }
 
-img#doodle {
-  position:             absolute;
-  right:                37px;
-  top:                  0;
-  width:                60px;
-  border:               none;
-  -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
-  -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
+.clear {
+  clear:                both;
 }
 
-img.simplecover {
-  float:                left;
-  margin-top:           1ex;
-  margin-bottom:        1ex;
-  margin-right:         1em;
-  /*height:               6em;*/
-  width:                60px;
-}
-
-img.cover {
-  float:                left;
-  margin-top:           1ex;
-  margin-bottom:        1ex;
-  margin-right:         1em;
-  /*height:               6em;*/
-  width:                60px;
-  -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
-  -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
-}
-
-ul.bib {
-  list-style-type:      none;
-  padding:               0px;
-}
-
-  ul.bib li.title {
-    font-style:         italic;
-    display:            inline;
-  }
-
-    ul.bib li.title a {
-      font-style:       normal;
-    }
-
-    ul.bib li.title:before {
-      /*content:          " \2027 \0020";*/
-    }
-
-  ul.bib li.event {
-    text-shadow:        #fff 1px 1px 0.1em;
-    display:            inline;
-  }
-  
-  ul.bib li.howpub {
-  }
-
-  ul.bib li.coauthors {
-  }
-
-  ul.bib li.abstract {
-   margin-top:          1em;          
-   margin-bottom:       1.5em;
-  }
-
-span.fade {
-  color:		#a8b5bf;
-}
-
-#container {
-  position:             relative;
-  background:		#63737e; 
-  width:		800px;
-  margin-left: 		auto;
-  margin-right: 	auto;
-  padding:              70px 80px 0px 80px;
-  background:		-moz-linear-gradient(top, #7c8f9d, #63737e 200px); 
-  background:		-webkit-gradient(linear, left top, 0 200, from(#7c8f9d), to(#63737e)); 
-}
-
-#textzone {
-  position:		relative;
-  background-color:     rgba(238,239,240,0.85);
-  color:		#4f585e;
-  padding:		20px 37px 20px 37px;
-  border-left:          1px solid white;
-  border-top:           1px solid white;
-  -moz-border-radius:   2px;
-  -webkit-border-radius:2px;
-  -moz-box-shadow:      #333 5px 5px 1em;
-  -webkit-box-shadow:   #333 5px 5px 1em;
-}
-
-#footer {
+div#footer {
   position:		relative;
   background-color:	transparent;
   padding-top:		20px;
@@ -217,36 +214,19 @@ span.fade {
   color: 		#333;
 }
 
-  #footer ul li {
+  div#footer ul li {
     display:            inline;
     margin-right:       1em;
   }
-
-#quickSummary {
-  padding-right:        74px;
-  padding-bottom:       0.5em;
-}
-
-.clear {
-  clear:                both;
-}
-
-.mono {
-  font:			normal 14px/1.5 "Courier new",fixed;
-}
-
-.sc {
-  font-variant:	        small-caps;
-}
 
 /*
  * The following is only used in Visual.
  */
 
-#display {
+div#display {
 }
 
-  #display img {
+  div#display img {
     margin-top: 	30px;
     margin-bottom: 	30px;
     margin-left: 	auto;
@@ -255,17 +235,17 @@ span.fade {
   }
 
   /* Deprecated */
-  #display table {
+  div#display table {
     margin-top:         5ex;
     margin-bottom:      10ex;
   }
 
-  #display table td {
+  div#display table td {
     padding-right:      5ex;
     padding-left:       5ex;
   }
 
-  #display .caption {
+  div#display .caption {
     border-top:         1px solid #aaa;
     font:		normal 9pt/1.5 "Courier New";
     text-align:         center;
@@ -277,7 +257,7 @@ span.fade {
     bottom:             0px;
   }
 
-  #display .caption .content {  
+  div#display .caption .content {  
     margin:             1ex;
   }
 
