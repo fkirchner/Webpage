@@ -12,9 +12,9 @@
 body {
   background:		#333;
   margin:		0px;
-  font:			normal 16px/1.5 "Handbook Pro Regular",Helvetica,Geneva,sans-serif;
-  font-size-adjust:     0.441;
-  font:			normal 16px/1.5 "Centro Sans Pro Regular",Helvetica,Geneva,sans-serif;
+  /*font:			normal 16px/1.5 "Handbook Pro Regular",Helvetica,Geneva,sans-serif;
+  font-size-adjust:     0.441;*/
+  font:			normal 14px/1.5 "Centro Sans Pro Regular",Helvetica,Geneva,sans-serif;
   font-size-adjust:     0.493;
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
@@ -129,13 +129,13 @@ div#container {
   margin-left: 		auto;
   margin-right: 	auto;
   padding:              70px 80px 0px 80px;
-  background:		-moz-linear-gradient(top, #adcdde, #829daf 300px); 
-  background:		-webkit-gradient(linear, left top, 0 300, from(#accdde), to(#829daf)); 
+  background:		-moz-linear-gradient(top, #b2cddf, #829daf 300px); 
+  background:		-webkit-gradient(linear, left top, 0 300, from(#b2cddf), to(#829daf)); 
 }
 
 div#textzone {
   position:		relative;
-  background-color:     rgba(245,244,239,0.92);
+  background-color:     rgba(245,244,239,0.90);
   color:		#4f585e;
   padding:		20px 37px 20px 37px;
   border-left:          1px solid white;
