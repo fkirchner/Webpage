@@ -23,7 +23,7 @@ h2 {
   line-height:		1;
   margin-top:		1em;
   margin-bottom:	1.5em;
-  font-family:          800 "minerva-modern-1","minerva-modern-2",Helvetica,Geneva,sans-serif;
+  font-family:          "minerva-modern-1","minerva-modern-2",Helvetica,Geneva,sans-serif;
 
 }
 
@@ -32,7 +32,7 @@ h3 {
   line-height:		1;
   margin-top:		3em;
   margin-bottom:	1em;
-  font-family:          800 "minerva-modern-1","minerva-modern-2",Helvetica,Geneva,sans-serif;
+  font-family:          "minerva-modern-1","minerva-modern-2",Helvetica,Geneva,sans-serif;
 }
 
 p {
@@ -75,6 +75,7 @@ img#doodle {
   border:               none;
   -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
   -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
+  box-shadow:           #a8b5bf 1px 1px 0.5em;
 }
 
 img.simplecover {
@@ -93,6 +94,7 @@ img.cover {
   width:                60px;
   -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;
   -moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
+  box-shadow:           #a8b5bf 3px 3px 0.3em;
 }
 
 ul.bib {
@@ -128,7 +130,7 @@ div#container {
   margin-right: 	auto;
   padding:              70px 80px 0px 80px;
   background:		-moz-linear-gradient(top, #a2bdcf, #829daf 600px); 
-  background:		-webkit-gradient(linear, left top, 0 300, from(#b2cddf), to(#829daf)); 
+  background:		-webkit-gradient(linear, left top, 0 600, from(#a2bdcf), to(#829daf)); 
 }
 
 div#textzone {
@@ -140,8 +142,10 @@ div#textzone {
   border-top:           1px solid white;
   -moz-border-radius:   2px;
   -webkit-border-radius:2px;
+  border-radius:        2px;
   -moz-box-shadow:      #333 5px 5px 1em;
   -webkit-box-shadow:   #333 5px 5px 1em;
+  box-shadow:           #333 5px 5px 1em;
 }
 
 div#quickSummary {
@@ -159,6 +163,7 @@ div#address {
   border-top:           1px solid #a8b5bf;
   -moz-border-radius:   3px;
   -webkit-border-radius:3px;
+  border-radius:        3px;
   /*-moz-box-shadow:      #a8b5bf 3px 3px 0.3em;
   -webkit-box-shadow:   #a8b5bf 3px 3px 0.3em;*/
 }
@@ -184,6 +189,7 @@ div#phonenumber {
   text-align:           center;
   -webkit-transform:    rotate(-90deg) translate(-4em,6em); 
   -moz-transform:       rotate(-90deg) translate(-4em,6em);	
+  -o-transform:         rotate(-90deg) translate(-4em,6em);	
 }
 
 div#digitalmail {
