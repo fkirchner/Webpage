@@ -10,27 +10,32 @@
 /* Validate this file at CSS level 3 */
 
 body {
-  background:		#333;
+  padding-top:          70px;
   margin:		0px;
   font:                 normal 14px/1.5 "lemonde-sans-1","lemonde-sans-2",Helvetica,Geneva,sans-serif;
+  background:		#829daf; 
+  background:		-moz-linear-gradient(top, #b2cddf, #829daf 600px); 
+  background:		-webkit-gradient(linear, left top, 0 600, from(#b2cddf), to(#829daf)); 
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
 }
 
-h2 {
+h1 {
   text-shadow:          #fff 1px 1px 0.1em;
   margin-top:		1em;
   margin-bottom:	1.5em;
   font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+  font-size:            1.5em;
   font-weight:          700;
 }
 
-h3 {
+h2 {
   text-shadow:          #fff 1px 1px 0.1em;
   margin-top:		2em;
   margin-bottom:	1em;
   font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+  font-size:            1.17em;
   font-weight:          700;
 }
 
@@ -85,9 +90,6 @@ img.simplecover {
   width:                60px;
 }
 
-div.cover {
-}
-
 img.cover {
   float:                left;
   width:                60px;
@@ -136,14 +138,6 @@ ul.bib {
    margin-bottom:       1.5em;
   }
 
-div#container {
-  position:             relative;
-  background:		#829daf; 
-  padding:              70px 80px 0px 80px;
-  background:		-moz-linear-gradient(top, #b2cddf, #829daf 600px); 
-  background:		-webkit-gradient(linear, left top, 0 600, from(#b2cddf), to(#829daf)); 
-}
-
 div#textzone {
   position:		relative;
   width:		725px;
@@ -191,7 +185,7 @@ div#paperpigmentmail {
   border-right:         1px solid #4f585e;
 }
 
-  div#paperpigmentmail table {
+  div#paperpigmentmail > table {
     border-spacing: 	0px 0px;
     text-align:         right;
   }
@@ -215,7 +209,7 @@ div#digitalmail {
   padding-left:         0.5em;
 }
 
-  div#digitalmail table {
+  div#digitalmail > table {
     border-spacing: 	0px 0px;
     text-align:         left;
   }
