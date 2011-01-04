@@ -136,6 +136,8 @@ ul.bib {
   ul.bib li.abstract {
    margin-top:          1em;          
    margin-bottom:       1.5em;
+   margin-left:         0.5em;
+   color:               #6f6f6f;
   }
 
 div#textzone {
@@ -237,6 +239,10 @@ div#footer {
 /*
  * The following is only used in Visual.
  */
+
+body#display {
+  background:           #333;
+}
 
 div#display {
 }

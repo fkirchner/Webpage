@@ -75,6 +75,37 @@
         href="papersLong.html" title="Collection of all published papers.">here</a>.
       </p>
 
+      <img class="cover" src="images/cover_springer.jpg" alt="Cover." />
+      <!--<img class="cover" src="images/cover_wflp10_part.png" height="225px" alt="Cover." />-->
+      <ul class="bib">
+        <li class="title">Secure the Clones: Static Enforcement of Secure Object Copying.
+        <a href="data/clones2011.pdf" 
+           title="The original publication is available at www.springerlink.com">[ee]</a> 
+        <a href="data/clones2011.bib">[bib]</a></li>
+        <li class="howpub">Programming Languages and Systems, 20th European
+        Symposium on Programming, Lecture Notes in Computer Science, 2011.</li>
+        <li class="coauthors">with Thomas Jensen and David Pichardie.</li> 
+        <li class="abstract">
+        Exchanging mutable data objects with untrusted code is a delicate
+        matter because of the risk of creating a data space that is accessible
+        by an attacker.  Consequently, secure programming guidelines for Java
+        stress the importance of using defensive copying before accepting or
+        handing out references to an inter- nal mutable object. However,
+        implementation of a copy method (like clone()) is entirely left to the
+        programmer. It may not provide a sufficiently deep copy of an object
+        and is subject to overriding by a malicious sub-class. Currently no
+        language-based mechanism supports secure object cloning. This paper
+        proposes a type-based annotation system for defining modular copy
+        policies for class-based object-oriented programs. A copy policy
+        specifies the maximally allowed sharing between an object and its
+        clone. We present a static enforcement mechanism that will guarantee
+        that all classes fulfill their copy policy, even in the presence of
+        overriding of copy methods, and establish the semantic correctness of
+        the over- all approach in Coq. The mechanism has been implemented and
+        experimentally evaluated on clone methods from several Java libraries.
+        </li>
+      </ul>
+
       <img class="simplecover" src="images/short-S5.png" alt="Cover." />
       <!--<img class="cover" src="images/short_part.png" height="225px" alt="Cover." />-->
       <ul class="bib">
@@ -116,26 +147,6 @@
         and strategies in procedural theorem provers. Finally, the paper
         illustrates how proof monads can be used to implement semantically clean
         control structure mechanisms in actual proof languages.</li>
-      </ul>
-
-      <img class="cover" src="images/cover_wflp10.jpg" alt="Cover." />
-      <!--<img class="cover" src="images/cover_wflp10_part.png" height="225px" alt="Cover." />-->
-      <ul class="bib">
-        <li class="title">Constraint Based Strategies.
-        <a href="data/strategies2010.pdf">[ee]</a> 
-        <a href="data/strategies2010.bib">[bib]</a></li>
-        <li class="howpub">Functional and Constraint Logic Programming, volume
-        5979 of Lecture Notes in Computer Science, 2010.</li>
-        <li class="coauthors">with H&eacute;l&egrave;ne Kirchner and Claude Kirchner.</li> 
-        <li class="abstract">
-        Numerous computational and deductive frameworks use the notion of
-        strategy to guide reduction and search space exploration, making the
-        macro scale control of micro operations an explicit object of interest.
-        In recent works, abstract strategies have been defined  in extension but
-        also intensionally. In this paper we complete these views with a new
-        declarative approach based on constraints, which are used to model the
-        different parts of a strategy. This procedure allows us to express
-        elaborate strategies in a declarative and reusable way. </li>
       </ul>
 
       <p>
