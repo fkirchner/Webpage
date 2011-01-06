@@ -73,13 +73,10 @@ span.fade {
 
 img#doodle {
   position:             absolute;
-  right:                37px;
-  top:                  0;
-  width:                60px;
+  right:                20px;
+  top:                  -10px;
+  width:                75px;
   border:               none;
-  -webkit-box-shadow:   #a8b5bf 1px 1px 0.5em;
-  -moz-box-shadow:      #a8b5bf 1px 1px 0.5em;
-  box-shadow:           #a8b5bf 1px 1px 0.5em;
 }
 
 img.simplecover {
