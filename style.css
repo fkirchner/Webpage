@@ -110,27 +110,27 @@ img.cover {
   box-shadow:           #a8b5bf 3px 3px 0.3em;
 }
 
-ul.bib {
+ul.article {
   list-style-type:      none;
   padding:              0px;
 }
 
-  ul.bib li.title {
+  ul.article li.title {
     font-style:         italic;
     display:            inline;
   }
 
-    ul.bib li.title a {
+    ul.article li.title a {
       font-style:       normal;
   }
   
-  ul.bib li.howpub {
+  ul.article li.howpub {
   }
 
-  ul.bib li.coauthors {
+  ul.article li.coauthors {
   }
 
-  ul.bib li.abstract {
+  ul.article li.abstract {
    margin-top:          1em;          
    margin-bottom:       1.5em;
    margin-left:         0.5em;
