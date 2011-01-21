@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en" xml:base="../">
+
+  <title>Florent Kirchner</title>
+  <link href="http://www.lix.polytechnique.fr/~fkirchner"/>
+  <link href="http://www.lix.polytechnique.fr/~fkirchner/feed/atom.xml" rel="self"/>
+  <updated>2011-01-20T00:18:00Z</updated>
+  <author>
+    <name>Florent Kirchner</name>
+  </author>
+  <id>tag:www.hikitech.com,2011-01-20:ftk</id>
+  <icon>images/favicon.ico</icon>
+  <rights> ftk (c) 2011</rights>
+
+  <entry>
+    <title>JLAP: The Proof Monad</title>
+    <link title="home page" href="http://www.lix.polytechnique.fr/~fkirchner"/>
+    <author>
+      <name>Florent Kirchner</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <style type="text/css" media="all">
+          ul {
+            list-style-type:      none;
+            padding:              0px;
+          }
+
+          ul li.title {
+            font-style:         italic;
+            display:            inline;
+          }
+
+          ul li.title a {
+            font-style:       normal;
+          }
+
+          ul li.howpub {
+          }
+
+          ul li.coauthors {
+          }
+
+          ul li.abstract {
+            margin-top:          1em;          
+            margin-bottom:       1.5em;
+            margin-left:         0.5em;
+            color:               #6f6f6f;
+          }
+
+          img.simplecover {
+            width:                60px;
+            float:                left;
+            margin-top:           1ex;
+            margin-bottom:        1ex;
+            margin-right:         1em;
+            border-radius:        2px;
+            -moz-border-radius:   2px;
+            -webkit-border-radius:2px;
+          }
+        </style>
+        <img class="simplecover" src="images/cover_jlap.png" alt="Cover." />
+        <ul style="article"> 
+          <li class="title">The Proof Monad.
+            <a href="data/proofmonad2010.pdf">[ee]</a> 
+            <a href="data/proofmonad2010.bib">[bib]</a> </li>
+          <li class="howpub">The Journal of Logic and Algebraic Programming, 
+            Volume 79, Issues 3-5, 2010.</li>
+          <li class="coauthors">with C&eacute;sar Mu&ntilde;oz.</li>
+          <li class="abstract">
+            A formalism for expressing the operational semantics of proof languages
+            used in procedural theorem provers is proposed. It is argued that this
+            formalism provides an elegant way to describe the computational features
+            of proof languages, such as side effects, exception handling, and
+            backtracking. The formalism, called proof monads, finds its roots in
+            category theory, and in particular satisfies the monad laws. It is shown
+            that the framework’s monadic operators are related to fundamental tactics
+            and strategies in procedural theorem provers. Finally, the paper
+            illustrates how proof monads can be used to implement semantically clean
+            control structure mechanisms in actual proof languages.</li>
+        </ul>
+      </div>
+    </content>
+    <id>tag:www.hikitech.com,2010-03-15:ftk</id>
+    <updated>2010-03-15T00:00:00Z</updated>
+    <category term="papers"/>
+  </entry>
+
+  <entry>
+    <title>LfSA: Thinking outside the (Arithmetic) Box</title>
+    <link title="home page" href="http://www.lix.polytechnique.fr/~fkirchner"/>
+    <author>
+      <name>Florent Kirchner</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <style type="text/css" media="all">
+          ul {
+            list-style-type:      none;
+            padding:              0px;
+          }
+
+          ul li.title {
+            font-style:         italic;
+            display:            inline;
+          }
+
+          ul li.title a {
+            font-style:       normal;
+          }
+
+          ul li.howpub {
+          }
+
+          ul li.coauthors {
+          }
+
+          ul li.abstract {
+            margin-top:          1em;          
+            margin-bottom:       1.5em;
+            margin-left:         0.5em;
+            color:               #6f6f6f;
+          }
+
+          img.simplecover {
+            width:                60px;
+            float:                left;
+            margin-top:           1ex;
+            margin-bottom:        1ex;
+            margin-right:         1em;
+            border-radius:        2px;
+            -moz-border-radius:   2px;
+            -webkit-border-radius:2px;
+          }
+        </style>
+      <img class="simplecover" src="images/short-S5.png" alt="Cover." />
+      <ul>
+        <li class="title">Thinking Outside the (Arithmetic) Box: Certifying RAHD Computations.
+        <a href="data/lfsa2010.pdf">[ee]</a> 
+        <a href="data/lfsa2010.bib">[bib]</a></li>
+        <li class="howpub">Short paper, Logics for System Analysis, 2010.</li> 
+        <li class="coauthors">with Grant Olney Passmore.</li>
+        <li class="abstract">
+        RAHD is a tool that takes advantage of a heterogeneous collection of
+        proof procedures to decide the satisfiability of formulas in the
+        existential fragment of the theory of real closed fields. But system
+        analysts can rarely restrict themselves only to arithmetic-based
+        problems: they might want to use RAHD as part of a more diverse formal
+        toolbox.  In this paper, we present ongoing work on an architecture that
+        enables the skeptical integration of RAHD into general-purpose proof
+        assistants.  We will present a system-level view of how this integration
+        can be performed, and examine efficiency concerns for this
+        implementation.</li>
+      </ul>
+      </div>
+    </content>
+    <id>tag:www.hikitech.com,2010-05-20:ftk</id>
+    <updated>2010-05-20T00:00:00Z</updated>
+    <category term="papers"/>
+  </entry>
+
+  <entry>
+    <title>ESOP: Secure the Clones</title>
+    <link title="home page" href="http://www.lix.polytechnique.fr/~fkirchner"/>
+    <author>
+      <name>Florent Kirchner</name>
+    </author>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <style type="text/css" media="all">
+          ul {
+            list-style-type:      none;
+            padding:              0px;
+          }
+
+          ul li.title {
+            font-style:         italic;
+            display:            inline;
+          }
+
+          ul li.title a {
+            font-style:       normal;
+          }
+
+          ul li.howpub {
+          }
+
+          ul li.coauthors {
+          }
+
+          ul li.abstract {
+            margin-top:          1em;          
+            margin-bottom:       1.5em;
+            margin-left:         0.5em;
+            color:               #6f6f6f;
+          }
+
+          img.simplecover {
+            width:                60px;
+            float:                left;
+            margin-top:           1ex;
+            margin-bottom:        1ex;
+            margin-right:         1em;
+            border-radius:        2px;
+            -moz-border-radius:   2px;
+            -webkit-border-radius:2px;
+          }
+        </style>
+      <img class="simplecover" src="images/cover_springer.jpg" alt="Cover." />
+      <ul>
+        <li class="title">Secure the Clones: Static Enforcement of Secure Object Copying.
+        <a href="data/clones2011.pdf" 
+          title="The original publication is available at www.springerlink.com">[ee]</a> 
+        <a href="data/clones2011.bib">[bib]</a>
+        <a href="http://www.irisa.fr/celtique/ext/clones"
+          title="Companion website">[...]</a></li>
+        <li class="howpub">Programming Languages and Systems, 20th European
+        Symposium on Programming, Lecture Notes in Computer Science, 2011.</li>
+        <li class="coauthors">with Thomas Jensen and David Pichardie.</li> 
+        <li class="abstract">
+        Exchanging mutable data objects with untrusted code is a delicate
+        matter because of the risk of creating a data space that is accessible
+        by an attacker.  Consequently, secure programming guidelines for Java
+        stress the importance of using defensive copying before accepting or
+        handing out references to an internal mutable object. However,
+        implementation of a copy method (like clone()) is entirely left to the
+        programmer. It may not provide a sufficiently deep copy of an object
+        and is subject to overriding by a malicious sub-class. Currently no
+        language-based mechanism supports secure object cloning. This paper
+        proposes a type-based annotation system for defining modular copy
+        policies for class-based object-oriented programs. A copy policy
+        specifies the maximally allowed sharing between an object and its
+        clone. We present a static enforcement mechanism that will guarantee
+        that all classes fulfill their copy policy, even in the presence of
+        overriding of copy methods, and establish the semantic correctness of
+        the overall approach in Coq. The mechanism has been implemented and
+        experimentally evaluated on clone methods from several Java libraries.
+        </li>
+      </ul>
+      </div>
+    </content>
+    <id>tag:www.hikitech.com,2011-01-05:ftk</id>
+    <updated>2011-01-05T00:00:00Z</updated>
+    <category term="papers"/>
+  </entry>
+
+</feed>
+
+ 
