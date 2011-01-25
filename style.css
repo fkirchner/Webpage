@@ -1,18 +1,12 @@
-/* Color palette at colorschemedesigner.com/#3v31T8L.aw0w0 (triad) */
-/* Grid:    width=800px
- *          left/right margin=37px
- *          top margin=90px
- *          columns=10/60px
- *          column gutter=1em(14px)
- *          rows=1em
- *          rows gutter=0.5em   
- */
 /* Validate this file at CSS level 3 */
+
+/* Credits go to Richard Clark for making this available. */
+@import "style-h5r.css";
 
 body {
   padding-top:          70px;
   margin:		0px;
-  font:                 normal 14px/1.5 "lemonde-sans-1","lemonde-sans-2",Helvetica,Geneva,sans-serif;
+  font:                 normal 14px/1.5 "lemonde-sans-1","lemonde-sans-2",FreeSans,Helvetica,Arial,sans-serif;
   background:		#829daf; 
   background:		-moz-linear-gradient(top, #b2cddf, #829daf 600px); 
   background:		-webkit-gradient(linear, left top, 0 600, from(#b2cddf), to(#829daf)); 
@@ -25,22 +19,28 @@ h1 {
   text-shadow:          #fff 1px 1px 0.1em;
   margin-top:		1em;
   margin-bottom:	1.5em;
-  font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+  font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2","URW Bookman L","Bookman","American Typewriter","Bookman Old Style",serif;
   font-size:            1.5em;
   font-weight:          700;
 }
 
-h2 {
+section > h1 {
   text-shadow:          #fff 1px 1px 0.1em;
   margin-top:		2em;
   margin-bottom:	1em;
-  font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2",serif;
+  font-family:          "ff-tisa-web-pro-1","ff-tisa-web-pro-2","URW Bookman L","Bookman","American Typewriter","Bookman Old Style",serif;
   font-size:            1.17em;
   font-weight:          700;
 }
 
 p {
-  /*margin:		1.286em 0em;*/
+  margin:               14px 0;
+}
+
+
+p#quickSummary {
+  padding-right:        74px;
+  padding-bottom:       0em;
 }
 
 a { 
@@ -48,15 +48,13 @@ a {
   color: 		#a6573c;
 }
 
-a.footer { 
-  font-weight: 		bold; 
-  text-decoration:	none; 
-  color: 		#333;
+a > img {
+  border:               none;
 }
 
-abbr {
-  border-bottom:        none;
+abbr[title] {
   cursor:               help;
+  border-bottom:        none;
 }
 
 span.fade {
@@ -64,12 +62,12 @@ span.fade {
 }
 
 span.amp {
-  font-family:		"goudy-bookletter-1911-1","goudy-bookletter-1911-2";
-  margin:		0 0.1em 0 0.1em;
+  font-family:		"goudy-bookletter-1911-1","goudy-bookletter-1911-2","Palatino","Palatino Linotype",serif;
+  margin:		0 0.1em 0 0.2em;
 }
 
 .mono {
-  font:			normal 14px/1.5 "Courier new",fixed;
+  font:			normal 14px/1.5 "Courier new","Courier",fixed;
 }
 
 .sc {
@@ -81,7 +79,6 @@ img#doodle {
   right:                20px;
   top:                  -10px;
   width:                75px;
-  border:               none;
 }
 
 img.simplecover {
@@ -118,39 +115,12 @@ img.cover {
   box-shadow:           #a8b5bf 3px 3px 0.3em;
 }
 
-ul.article {
-  list-style-type:      none;
-  padding:              0px;
-}
-
-  ul.article li.title {
-    font-style:         italic;
-    display:            inline;
-  }
-
-    ul.article li.title a {
-      font-style:       normal;
-  }
-  
-  ul.article li.howpub {
-  }
-
-  ul.article li.coauthors {
-  }
-
-  ul.article li.abstract {
-   margin-top:          1em;          
-   margin-bottom:       1.5em;
-   margin-left:         0.5em;
-   color:               #6f6f6f;
-  }
-
 div#textzone {
   position:		relative;
   width:		725px;
   margin-left: 		auto;
   margin-right: 	auto;
-  background-color:     rgba(245,244,239,0.90);
+  background-color:     rgba(255,254,249,0.80);
   color:		#4f585e;
   padding:		20px 37px 20px 37px;
   border-left:          1px solid white;
@@ -158,50 +128,28 @@ div#textzone {
   -moz-border-radius:   2px;
   -webkit-border-radius:2px;
   border-radius:        2px;
-  -moz-box-shadow:      #333 5px 5px 1em;
-  -webkit-box-shadow:   #333 5px 5px 1em;
-  box-shadow:           #333 5px 5px 1em;
-}
-
-div#quickSummary {
-  padding-right:        74px;
-  padding-bottom:       0.5em;
-}
-
-div#address {
-  padding:              10px 0 10px 0;
+  -moz-box-shadow:      rgba(51,51,51,0.4) 10px 15px 1em;
+  -webkit-box-shadow:   rgba(51,51,51,0.4) 10px 15px 1em;
+  box-shadow:           rgba(51,51,51,0.4) 10px 15px 1em;
 }
 
 div#paperpigmentmail {
   display:              block;
-  position:             relative;
   float:                left;
   padding-right:        0.5em;
+  margin-left:          20px;
+  text-align:           right;
   border-right:         1px solid #4f585e;
-  margin-left:          67px;
 }
 
-  div#paperpigmentmail > table {
-    border-spacing: 	0px 0px;
-    text-align:         right;
+  div#paperpigmentmail > span.fn {
+    display:            none;
   }
-
-div#phonenumber {
-  display:              none;
-  position:             relative;
-  float:                left;
-  font-size:            10px;
-  text-align:           center;
-  -webkit-transform:    rotate(-90deg) translate(-4em,6em); 
-  -moz-transform:       rotate(-90deg) translate(-4em,6em);	
-  -o-transform:         rotate(-90deg) translate(-4em,6em);	
-}
 
 div#digitalmail {
   display:              block;
-  position:             relative;
   float:                left;
-  margin-top:           0.8em;
+  margin-top:           0.5em;
   padding-left:         0.5em;
 }
 
@@ -210,31 +158,71 @@ div#digitalmail {
     text-align:         left;
   }
 
+  div#digitalmail span.sc+span {
+    font-size:          11px;
+  }
+
 .clear {
   clear:                both;
 }
 
-div#footer {
-  position:		relative;
+article > ul {
+  list-style-type:      none;
+  margin:               1em 0 1em 0;
+}
+
+  article > ul li.title {
+    font-style:         italic;
+    display:            inline;
+  }
+
+    article > ul li.title a {
+      font-style:       normal;
+  }
+  
+  article > ul li.howpub {
+  }
+
+  article > ul li.coauthors {
+  }
+
+  article > ul li.abstract {
+   margin-top:          0.5em;          
+   margin-bottom:       0.5em;
+   margin-left:         0.5em;
+   color:               #6f6f6f;
+  }
+
+address {
+}
+
+footer {
+  width:                165px;
+  height:               50px;
+  margin:		40px auto;
+  display:              block;
   background-color:	transparent;
-  padding-top:		20px;
-  padding-bottom:	20px;
   text-align:		center;
-  text-transform: 	uppercase;
-  font-size:		11px;
+  font-size:		10px;
   color: 		#333;
 }
 
-  div#footer ul li {
-    display:            inline;
-    margin-right:       1em;
+  footer #w3c {
+    float:              right;
+  }
+
+  footer #copyright {
+    float:              left;
+    font-weight:        bold;
+    color:              #d9d9d9;
+    margin-top:         10px;
   }
 
 .striped {
   background:           url("images/striped-bg.png") repeat scroll 0 0 rgba(238,239,240,0.3);
   text-shadow:          #fff 1px 1px 0.1em;
   background-color:     rgba(238,239,240,0.3);
-  padding:              0px 10px 0px 10px;
+  padding:              10px;
   border-right:         1px solid white;
   border-bottom:        1px solid white;
   border-left:          1px solid #a8b5bf;
@@ -242,6 +230,32 @@ div#footer {
   border-radius:        3px;
   -moz-border-radius:   3px;
   -webkit-border-radius:3px;
+}
+
+/*
+ * Typekit loading properties.
+ */
+
+.wf-loading div#textzone {
+  /* Hide the main div while web fonts are loading. */
+  visibility:           hidden;
+}
+
+.wf-active div#loader,
+.wf-inactive div#loader {
+  visibility:           hidden;
+}
+
+.wf-loading div#loader {
+  visibility:           visible;
+}
+
+div#loader {
+  position:             absolute;
+  top:                  30px;
+  left:                  30px;
+  color:                white;
+  text-align:           center;
 }
 
 /*
@@ -289,5 +303,15 @@ div#display {
   div#display .caption .content {  
     margin:             1ex;
   }
+
+/* Color palette at colorschemedesigner.com/#3v31T8L.aw0w0 (triad) */
+/* Grid:    width=800px
+ *          left/right margin=37px
+ *          top margin=90px
+ *          columns=10/60px
+ *          column gutter=1em(14px)
+ *          rows=1em
+ *          rows gutter=0.5em   
+ */
 
 /* vim: set sw=2 : */
