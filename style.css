@@ -7,11 +7,10 @@ body {
   padding-top:          70px;
   margin:		0px;
   font:                 normal 14px/1.5 "lemonde-sans-1","lemonde-sans-2",FreeSans,Helvetica,Arial,sans-serif;
-  text-rendering:       optimizeLegibility;
   background:		#829daf; 
   background:		-moz-linear-gradient(top, #b2cddf, #829daf 600px); 
   background:		-webkit-gradient(linear, left top, 0 600, from(#b2cddf), to(#829daf)); 
-  filter:               progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#b2cddf,endColorstr=#829daf,GradientType=0); zoom: 1;
+  filter:               progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#b2cddf,endColorstr=#829daf,GradientType=0);
   /* Advanced typographic properties are still a bit early for now */
   /*hyphenate: 		auto;
   hyphenate-lines: 	3;*/
@@ -66,7 +65,6 @@ span.fade {
 span.amp {
   font-family:		"goudy-bookletter-1911-1","goudy-bookletter-1911-2","Palatino","Palatino Linotype",serif;
   margin:		0 0.1em 0 0.2em;
-  font-weight:          bold;
 }
 
 .mono {
