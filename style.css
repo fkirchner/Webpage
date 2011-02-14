@@ -63,7 +63,7 @@ span.fade {
 }
 
 span.amp {
-  font-family:		"goudy-bookletter-1911-1","goudy-bookletter-1911-2","Palatino","Palatino Linotype",serif;
+  font-family:         "escoffier-capitaux-1","escoffier-capitaux-2","goudy-bookletter-1911-1","goudy-bookletter-1911-2","Palatino","Palatino Linotype",serif;
   margin:		0 0.1em 0 0.2em;
 }
 
@@ -178,7 +178,6 @@ article > ul {
   }
 
     article > ul li.title a {
-      font-style:       normal;
   }
   
   article > ul li.howpub {
@@ -187,11 +186,22 @@ article > ul {
   article > ul li.coauthors {
   }
 
+  article > ul li.coauthors a {
+    color:              #4f585e;
+  }
+
   article > ul li.abstract {
    margin-top:          0.5em;          
    margin-bottom:       0.5em;
    margin-left:         0.5em;
    color:               #A09F9B;
+  }
+
+  article > ul li.abstract blockquote {
+    margin-top:         0.5em;
+    margin-bottom:      0.5em;
+    margin-left:        3em;
+    margin-right:       3em;
   }
 
 address {

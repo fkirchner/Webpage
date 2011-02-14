@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="author"       content="Hikitech" />
+  <meta name="keywords"     content="Stage Recherche et Developpement" />
+  <meta name="description"  content="Les sujets de travaux proposés par l'équipe Celtique aux étudiants de mathématiques et d'informatique de Bretagne." />
+  <meta name="robots"       content="noindex" />
+  <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=8" /> <![endif]-->
+
+  <link rel="home"          href="http://www.lix.polytechnique.fr/~fkirchner" />
+  <link rel="stylesheet"    href="style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="images/mobicon.ico" sizes="57x57" />
+  <link rel="license"       href="http://creativecommons.org/licenses/by-sa/3.0/" />
+
+  <!-- 
+    Fixes for known browser quirks - please report other bugs.
+  -->
+  <!-- Enable HTML5 semantic element recognition -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if IE]> <style type="text/css" media="all"> 
+    #textzone {
+      background-color: rgb(238,239,240);
+    } 
+  </style><![endif]-->
+
+  <!-- Font delivery -->
+  <script type="text/javascript" src="http://use.typekit.com/eqq1ros.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <title>Formation Recherche et Développement</title>
+
+</head>
+
+
+<body>
+
+  <div id="textzone">
+
+
+    <header>
+
+    <h1>Sujets de travaux et de stages</h1>
+
+    <p id="quickSummary">
+    Cette page regroupe les propositions de l'équipe Celtique en direction du
+    cursus d'enseignement supérieur de la région rennaise. Il s'agit de sujets
+    de stage axés autour des mathématiques et de l'informatique, gravitant
+    autour de la sécurité-innocuité (ou <em>safety</em>) logicielle, et plus
+    précisément la preuve de programmes et les méthodes formelles.
+    </p>
+
+    <p>
+    Pour toute information complémentaire, les personnes intéressées sont
+    invitées à contacter les auteurs de propositions directement.
+    </p>
+
+    </header>
+
+    <section>
+
+    <article>
+    <a href="data/gröbner.pdf">
+      <img class="simplecover" src="images/gröbner.png" alt="Cover." />
+    </a>
+    <ul>
+      <li class="title">Preuve de programmes : génération d'invariants polynomiaux.</li>
+      <li><em>Mots-clés</em> : Preuve de programmes, invariants, analyse
+      statique, bases de Gröbner et algorithmes associés.</li>
+      <li>Équipe Celtique, IRISA / INRIA Rennes Bretagne Atlantique.</li>
+      <li class="coauthors">avec 
+      <a href="http://www.irisa.fr/celtique/cachera">David Cachera</a>, 
+      <a href="http://www.irisa.fr/celtique/jobin">Arnaud Jobin</a> et 
+      <a href="http://www.lix.polytechnique.fr/~fkirchner">Florent Kirchner</a>.</li> 
+      <li class="abstract">
+      Les méthodes d'analyse de programmes requièrent d'annoter certaines
+      parties de code (boucles, branchements, appels de fonction, etc.) par les
+      propriétés logiques qu'ils observent ; on appelle ces annotations des
+      <em>invariants</em>. Spécifier des invariants à la main est une tâche
+      complexe sinon laborieuse, et son automatisation peut être vue comme
+      l'une des clés de voûte de la dissémination des méthodes formelles en
+      ingénierie logicielle. En somme, la question peut se résumer comme le
+      problème ouvert suivant :
+      <blockquote>
+        &laquo; Comment trouver des invariants polynomiaux de programmes,
+        automatiquement et aussi précisément que possible ? &raquo;
+      </blockquote>
+      L'équipe Celtique a retenu une approche reposent sur l'utilisation
+      d'idéaux de polynômes pour calculer une version abstraite du comportement
+      des programmes ; elle propose d'utiliser un ensemble de techniques
+      avancées pour améliorer ce type d'analyse.
+      <a href="data/gröbner.pdf">[+]</a>
+      </li>
+    </ul>
+    </article>
+
+    <article>
+    <a href="data/rahd+coq.pdf">
+      <img class="simplecover" src="images/rahd+coq.png" alt="Cover." />
+    </a>
+    <ul>
+      <li class="title">Échange de certificats de calculs arithmétiques.</li>
+      <li><em>Mots-clés</em> : Méthodes formelles, arithmétique non-linéaire,
+      bases de données, programmation fonctionnelle.</li>
+      <li>Équipe Celtique, IRISA / INRIA Rennes Bretagne Atlantique.</li>
+      <li class="coauthors">avec 
+      <a href="http://www.irisa.fr/celtique/fbesson/">Frédéric Besson</a> et 
+      <a href="http://www.lix.polytechnique.fr/~fkirchner">Florent Kirchner</a>.</li>
+      <li class="abstract">
+      RAHD est un logiciel qui utilise une batterie de techniques hétérogènes
+      pour décider efficacement de la satisfiabilité de formules arithmétiques.
+      En pratique, étant donné un ensemble de relations entre polynômes à
+      coefficients réels, l'outil permet de valider (ou d'invalider)
+      l'existence d'un ensemble de valeurs pour les variables des polynômes,
+      telles que ces relations soient vérifiées. Il faut toutefois noter qu'il
+      est rare qu'un problème purement arithmétique se présente à l'attention
+      des ingénieurs et des scientifiques. Le plus souvent, il ne constituera
+      qu'une des facettes d'un système plus important. Par exemple, dans le cas
+      de la vérification d'un composant de navigation aéronautique, RAHD pourra
+      être utilisé pour effectuer un calcul de trajectoire de vol, mais il
+      faudra trouver un autre moyen de prendre en compte l'état des systèmes de
+      commande, du trafic aérien, des consignes des contrôleurs au sol, etc. 
+      <a href="data/rahd+coq.pdf">[+]</a>
+      </li>
+    </ul>
+    </article>
+
+    </section>
+
+  </div>
+
+  <footer>
+  <p id="copyright">ftk (c) 2011</p>
+  <a href="http://www.w3.org/html/logo/" id="w3c">
+    <img src="images/html5-badge-h-css3-semantics.png" width="100px" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+  </a>
+  </footer>
+
+  <div id="loader">
+    Loading...
+  </div>
+
+</body>
+</html>
+
+<!-- vim: set sw=2 : -->
+
