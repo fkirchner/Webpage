@@ -5,9 +5,14 @@ body {
   background:   url(../img/bg-square.jpg);
 }
 
-div.padded {
-  padding-top:  50px;
-  padding-bottom: 50px;
+div.padded-max {
+  height:       150px;
+  margin:       0px;
+}
+
+div.padded-min {
+  height:       50px;
+  margin:       0px;
 }
 
 div.eml {
@@ -120,5 +125,28 @@ blockquote p {
   font-size:      inherit;
   font-weight:    inherit;
   line-height:    inherit;
+}
+
+/* Override Boostrap defaults */
+/* Margin right instead of ledft on btn-group */
+
+.btn-group {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  margin-top:     10px;
+  font-size: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  *zoom: 1;
+}
+
+.btn-group:first-child {
+  margin-right: 10px;
+}
+
+.btn-group + .btn-group {
+  margin-left: 0px;
+  margin-right: 10px;
 }
 

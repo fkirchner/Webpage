@@ -27,7 +27,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -39,6 +39,7 @@
   </head>
 
   <body class="hyphenate">
+
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
@@ -49,222 +50,239 @@
             <small>Jack Kerouac, Road Workbook - Mexico, 1950.</small>
           </blockquote>
         </div>
-        <div class="span9">
-          <div class="row-fluid">
-            <div class="span9 offset1 red">
-              <div class="btn-toolbar">
-                <div class="btn-group">
-                  <a href="#2001" class="btn noit">2001</a>
-                  <a href="#2002" class="btn noit">2002</a>
-                  <a href="#2003" class="btn noit">2003</a>
-                </div>
-                <div class="btn-group">
-                  <a href="#2004" class="btn noit">2004</a>
-                  <a href="#2005" class="btn noit">2005</a>
-                  <a href="#2006" class="btn noit">2006</a>
-                  <a href="#2007" class="btn noit">2007</a>
-                </div>
-                <div class="btn-group">
-                  <a href="#2008" class="btn noit">2008</a>
-                  <a href="#2009" class="btn noit">2009</a>
-                  <a href="#2010" class="btn noit">2010</a>
-                  <a href="#2011" class="btn noit">2011</a>
-                </div>
-                <div class="btn-group">
-                  <a href="#2012" class="btn noit">2012</a>
-                </div>
-              </div>
+        <div class="span7">
+          <div class="btn-toolbar padded-max visible-desktop">
+            <div class="btn-group">
+              <a href="#2001" class="btn noit">2001</a>
+              <a href="#2002" class="btn noit">2002</a>
+              <a href="#2003" class="btn noit">2003</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2004" class="btn noit">2004</a>
+              <a href="#2005" class="btn noit">2005</a>
+              <a href="#2006" class="btn noit">2006</a>
+              <a href="#2007" class="btn noit">2007</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2008" class="btn noit">2008</a>
+              <a href="#2009" class="btn noit">2009</a>
+              <a href="#2010" class="btn noit">2010</a>
+              <a href="#2011" class="btn noit">2011</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2012" class="btn noit">2012</a>
+            </div>
+          </div><!--/btn-toolbar-->
+          <div class="btn-toolbar hidden-desktop">
+            <div class="btn-group">
+              <a href="#2001" class="btn noit">2001</a>
+              <a href="#2002" class="btn noit">2002</a>
+              <a href="#2003" class="btn noit">2003</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2004" class="btn noit">2004</a>
+              <a href="#2005" class="btn noit">2005</a>
+              <a href="#2006" class="btn noit">2006</a>
+              <a href="#2007" class="btn noit">2007</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2008" class="btn noit">2008</a>
+              <a href="#2009" class="btn noit">2009</a>
+              <a href="#2010" class="btn noit">2010</a>
+              <a href="#2011" class="btn noit">2011</a>
+            </div>
+            <div class="btn-group">
+              <a href="#2012" class="btn noit">2012</a>
             </div>
           </div>
-          <div class="row-fluid visible-desktop">
-            <div class="span11 offset1">
-              <div class="padded "></div>
-            </div>
-          </div>
-          <div class="row-fluid">
-            <div class="span9 offset1">
-              %%GRP%%(dec: year)
-              <a class="EntryGoto" id="%%name%%"></a>
-              <h5 class="myheading">%%name%%</h5>
-              %%FOR%%(@entry={"article"};)
-              <article>
-              <ul>
-                <li class="type">Journal article</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
+          <div>
+            %%GRP%%(dec: year)
+            <a class="EntryGoto" id="%%name%%"></a>
+            <h5 class="myheading">%%name%%</h5>
+            %%FOR%%(@entry={"article"};)
+            <article>
+            <ul>
+              <li class="type">Journal article</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
+                M = ""
+                %%BIB%%
+                %%title%%.
                 %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
-                M = ""
-                %%BIB%%
-                </li>
-                <li class="howpub">%%journal%% %%volume%%(%%number%%)%%BIB%%(inc:pages;)
-                N = ": %%content%%"
-                M = ""
-                %%BIB%% (%%year%%).</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%journal%% %%volume%%(%%number%%)%%BIB%%(inc:pages;)
+              N = ": %%content%%"
+              M = ""
+              %%BIB%% (%%year%%).</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"inproceedings"};)
-              <article>
-              <ul>
-                <li class="type">Conference paper</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
+            %%FOR%%(@entry={"inproceedings"};)
+            <article>
+            <ul>
+              <li class="type">Conference paper</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
+                M = ""
+                %%BIB%%
+                %%title%%.
                 %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
-                M = ""
-                %%BIB%%
-                </li>
-                <li class="howpub">%%booktitle%% %%year%%%%BIB%%(inc:pages;)
-                N = ": %%content%%"
-                M = ""
-                %%BIB%%.</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%booktitle%% %%year%%%%BIB%%(inc:pages;)
+              N = ": %%content%%"
+              M = ""
+              %%BIB%%.</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"techreport"};)
-              <article>
-              <ul>
-                <li class="type">Research report</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
+            %%FOR%%(@entry={"techreport"};)
+            <article>
+            <ul>
+              <li class="type">Research report</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
+                M = ""
+                %%BIB%%
+                %%title%%.
                 %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
-                M = ""
-                %%BIB%%
-                </li>
-                <li class="howpub">%%institution%%%%BIB%%(inc:number;)
-                N = ", %%content%%"
-                M = ""
-                %%BIB%% (%%year%%).</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%institution%%%%BIB%%(inc:number;)
+              N = ", %%content%%"
+              M = ""
+              %%BIB%% (%%year%%).</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"mastersthesis"};)
-              <article>
-              <ul>
-                <li class="type">Master's thesis</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
-                %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
+            %%FOR%%(@entry={"mastersthesis"};)
+            <article>
+            <ul>
+              <li class="type">Master's thesis</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
-                </li>
-                <li class="howpub">%%school%%, %%year%%.</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                %%title%%.
+                %%BIB%%(inc:ee;)
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%school%%, %%year%%.</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"phdthesis"};)
-              <article>
-              <ul>
-                <li class="type">Ph.D thesis</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
-                %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
+            %%FOR%%(@entry={"phdthesis"};)
+            <article>
+            <ul>
+              <li class="type">Ph.D thesis</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
-                </li>
-                <li class="howpub">%%school%%, %%year%%.</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                %%title%%.
+                %%BIB%%(inc:ee;)
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%school%%, %%year%%.</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"misc"};)
-              <article>
-              <ul>
-                <li class="type">Note</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
-                %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
+            %%FOR%%(@entry={"misc"};)
+            <article>
+            <ul>
+              <li class="type">Note</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
-                </li>
-                <li class="howpub">%%note%%, %%year%%.</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
+                %%title%%.
+                %%BIB%%(inc:ee;)
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%note%%, %%year%%.</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
 
-              %%FOR%%(@entry={"manual"};)
-              <article>
-              <ul>
-                <li class="type">Manual</li>
-                <li class="coauthors">%%author%%.<br></li>
-                <li class="title">
-                %%BIB%%(inc:ee;)
-                N = "<a href=\"%%content%%\">"
-                  M = ""
-                  %%BIB%%
-                  %%title%%.
-                  %%BIB%%(inc:ee;)
-                  N = "</a>"
+            %%FOR%%(@entry={"manual"};)
+            <article>
+            <ul>
+              <li class="type">Manual</li>
+              <li class="coauthors">%%author%%.<br></li>
+              <li class="title">
+              %%BIB%%(inc:ee;)
+              N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
-                </li>
-                <li class="howpub">%%year%%.</li>
-                %%BIB%%(inc:abstract;)
-                N = "<li class=\"abstract\">%%content%%</li>"
-                %%BIB%%
-              </ul>
-              </article>
-              %%ROF%%
-              %%PRG%%
-            </div><!--/span-->
-          </div><!--/row-->
+                %%title%%.
+                %%BIB%%(inc:ee;)
+                N = "</a>"
+              M = ""
+              %%BIB%%
+              </li>
+              <li class="howpub">%%year%%.</li>
+              %%BIB%%(inc:abstract;)
+              N = "<li class=\"abstract\">%%content%%</li>"
+              %%BIB%%
+            </ul>
+            </article>
+            %%ROF%%
+            %%PRG%%
+          </div><!--/bib2x-->
+        </div> <!--/span-->
+        <!-- Colophon -->
+        <div class="span1 offset1">
+          <div class="padded-max visible-desktop"></div>
+          <!-- <p><a class="red inset" href="#colophon" data-toggle="modal"><strong>&raquo;</strong></a></p> -->
+          <p><a class="inset pull-right" href="index.html"><img src="assets/img/glyphicons_112_align_right_gray.png" style="height:14px;"></a></p>
         </div><!--/span-->
       </div><!--/row-->
     </div><!--/fluid-container-->
