@@ -282,7 +282,7 @@
         <div class="span1 offset1">
           <div class="padded-max visible-desktop"></div>
           <!-- <p><a class="red inset" href="#colophon" data-toggle="modal"><strong>&raquo;</strong></a></p> -->
-          <p><a class="inset pull-right" href="index.html"><img src="assets/img/glyphicons_112_align_right_gray.png" style="height:14px;"></a></p>
+          <p><a class="inset pull-right" href="index.html"><img src="assets/img/glyphicons_221_unshare_gray.png" style="height:15px;"></a></p>
         </div><!--/span-->
       </div><!--/row-->
     </div><!--/fluid-container-->
