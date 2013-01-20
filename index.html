@@ -29,8 +29,8 @@
     <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-touch-icon-72.png">
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-57.png">
 
-    <script type="text/javascript" src="//use.typekit.net/eqq1ros.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://fast.fonts.com/jsapi/197fef63-7503-4830-8149-bd2601653064.js"></script>
+
   </head>
 
   <body class="hyphenate tk-chaparral-pro">
@@ -67,13 +67,13 @@
         <!-- Publications -->
         <div class="span4">
           <div class="red padded-max visible-desktop">
-            <a href="#address" class="inset noit pull-right donthyphenate sc bold" data-toggle="modal">Contact <img class="contact" src="assets/img/glyphicons_242_google_maps_red.png"></a><br><br>
-            <a href="#visual" class="inset noit pull-right donthyphenate sc bold" data-toggle="modal">Visual <img class="contact" src="assets/img/glyphicons_ftk_camera_red.png"></a>
+            <a href="#address" class="inset noit pull-right donthyphenate" data-toggle="modal">CONTACT <img class="contact" src="assets/img/glyphicons_242_google_maps_red.png"></a><br><br>
+            <a href="#visual" class="inset noit pull-right donthyphenate" data-toggle="modal">VISUAL <img class="contact" src="assets/img/glyphicons_ftk_camera_red.png"></a>
           </div>
           <div class="red padded-min hidden-desktop">
             <div class="btn-group pull-right">
-            <a href="#visual" class="btn red inset noit donthyphenate" data-toggle="modal">VISUAL <img class="contact" src="assets/img/glyphicons_ftk_camera_red.png"></a>
-            <a href="#address" class="btn red inset noit donthyphenate" data-toggle="modal">CONTACT <img class="contact" src="assets/img/glyphicons_242_google_maps_red.png"></a>
+            <a href="#visual" class="btn red inset noit donthyphenate" data-toggle="modal">VISUAL</a>
+            <a href="#address" class="btn red inset noit donthyphenate" data-toggle="modal">CONTACT</a>
           </div>
           </div>
           <div>
@@ -160,7 +160,7 @@
         <!-- Projects -->
         <div class="span4">
           <div class="padded-max visible-desktop"></div>
-          <h5>The <abbr class="initialism">Stance</abbr> project</h5>
+          <h5>The STANCE project</h5>
           <p>The objective of this <abbr class="initialism">FP7
             STREP</abbr> is to drive scientific and technological
           breakthroughs in the domain of software security.  Over three
@@ -254,5 +254,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/hyphenate.min.js"></script>
 
+    <script type="text/javascript">
+      $(".contact").before('<span class="braces inset">{</span> ');
+    </script>
   </body>
 </html>
