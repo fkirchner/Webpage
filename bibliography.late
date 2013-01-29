@@ -53,7 +53,7 @@
           </blockquote>
         </div>
         <div class="span7">
-          <div class="btn-toolbar padded-max visible-desktop">
+          <div class="btn-toolbar">
             <div class="btn-group">
               <a href="#2001" class="btn noit">2001</a>
               <a href="#2002" class="btn noit">2002</a>
@@ -75,28 +75,6 @@
               <a href="#2012" class="btn noit">2012</a>
             </div>
           </div><!--/btn-toolbar-->
-          <div class="btn-toolbar hidden-desktop">
-            <div class="btn-group">
-              <a href="#2001" class="btn noit">2001</a>
-              <a href="#2002" class="btn noit">2002</a>
-              <a href="#2003" class="btn noit">2003</a>
-            </div>
-            <div class="btn-group">
-              <a href="#2004" class="btn noit">2004</a>
-              <a href="#2005" class="btn noit">2005</a>
-              <a href="#2006" class="btn noit">2006</a>
-              <a href="#2007" class="btn noit">2007</a>
-            </div>
-            <div class="btn-group">
-              <a href="#2008" class="btn noit">2008</a>
-              <a href="#2009" class="btn noit">2009</a>
-              <a href="#2010" class="btn noit">2010</a>
-              <a href="#2011" class="btn noit">2011</a>
-            </div>
-            <div class="btn-group">
-              <a href="#2012" class="btn noit">2012</a>
-            </div>
-          </div>
           <div>
             %%GRP%%(dec: year)
             <a class="EntryGoto" id="%%name%%"></a>
