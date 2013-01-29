@@ -37,16 +37,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57.png">
 
-    <script type="text/javascript" src="//use.typekit.net/eqq1ros.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://fast.fonts.com/jsapi/197fef63-7503-4830-8149-bd2601653064.js"></script>
   </head>
 
-  <body class="hyphenate tk-chaparral-pro">
+  <body class="hyphenate">
 
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-          <blockquote class="pull-right tkmetallophile-sp8">
+          <blockquote class="pull-right">
             <p>But you can go on thinking and imagining forever further and stop at no
             decisions to pick up a bag for the thinkings. Turn your thinking into your
             work, your thoughts a book, in sieges.</p>

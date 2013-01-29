@@ -10,9 +10,9 @@ div.container-fluid {
   padding:      40px 20px;
   background:   url(../img/bg-square.jpg);
   border-top:   1px solid white;
-  -moz-box-shadow: rgba(01,01,01,0.6) 0px 0px 1em;
-  -webkit-box-shadow: rgba(51,51,51,0.6) 0px 0px 1em;
-  box-shadow:   rgba(01,01,01,0.6) 0px 0px 1em;
+  -moz-box-shadow: rgba(01,01,01,0.4) 0px 0px 1em;
+  -webkit-box-shadow: rgba(51,51,51,0.4) 0px 0px 1em;
+  box-shadow:   rgba(01,01,01,0.4) 0px 0px 1em;
 }
 
 footer {
@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow:  0px 1px white;
   /*font-variant: small-caps;*/
   text-transform: uppercase;
+  /*border-top:        1px solid #999;*/
 }
 
 img.contact {
