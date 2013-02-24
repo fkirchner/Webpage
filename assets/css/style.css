@@ -159,7 +159,8 @@ blockquote p {
   margin-left:  -210px;
 }
 
-@media (max-width: 979px) {
+/* Fix modal placement in phone layout */
+@media (max-width: 768px) {
   .modal-medium {
     margin:     auto;
   }
