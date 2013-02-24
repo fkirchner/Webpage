@@ -159,6 +159,12 @@ blockquote p {
   margin-left:  -210px;
 }
 
+@media (max-width: 979px) {
+  .modal-medium {
+    margin:     0;
+  }
+}
+
 footer {
   width:        165px;
   height:       50px;
