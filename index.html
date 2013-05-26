@@ -43,10 +43,10 @@
           to biosciences, from fundamental physics to information
           technology.
           </p><p>
-          As part of CEA I am heading the <a
+          Within CEA the <a
             href="http://www-list.cea.fr/en/validation-en">LSL</a> laboratory
-          that leverages formal methods to ensure fundamental properties of
-          software artifacts. Of particular interest are those pertaining to <abbr
+          leverages formal methods to ensure fundamental properties of software
+          artifacts. Of particular interest are those pertaining to <abbr
             title="Innocuity with regards to classes of failures">safety</abbr>
           or <abbr title="Immunity to third-party threats">security</abbr>.
           </p><p>
@@ -64,8 +64,8 @@
           </p>
         </div>
 
-        <!-- Publications -->
         <div class="span4">
+          <!-- Navigation -->
           <div class="red padded-max visible-desktop visible-tablet">
             <a href="#address" class="heading inset noit pull-right donthyphenate" data-toggle="modal">CONTACT</a>
           </div>
@@ -75,8 +75,22 @@
               <a href="bibliography.html" class="btn red inset noit donthyphenate">PUBLICATIONS</a>
             </div>
           </div>
+          <!-- Publications -->
           <div>
             <h5>Offprints</h5>
+            <article>
+            <ul>
+              <li class="type">Short paper</li>
+              <li class="coauthors"><a href="http://shemesh.larc.nasa.gov/people/aeg/">Alwyn Goodloe</a>, <a href="http://shemesh.larc.nasa.gov/people/cam/">César A. Muñoz</a>, and <a href="https://www.polytechnique.org/profile/loic.correnson.1993">Loïc Correnson</a>.<br></li>
+              <li class="title">
+              <a href="http://dx.doi.org/10.1007/978-3-642-38088-4_31">
+                Verification of Numerical Programs: From Real Numbers to Floating Point Numbers.
+                </a>
+              </li>
+              <li class="howpub">NASA Formal Methods 2013: 441-446.</li>
+              <li class="abstract">Verifying that rounding errors arising in a C implementation of a formally proven algorithm do not affect its correctness.</li>
+            </ul>
+            </article>
             <article>
             <ul>
               <li class="type">Conference paper</li>
@@ -137,21 +151,6 @@
               </li>
             </ul>
             </article>
-            <article>
-            <ul>
-              <li class="type">Short paper</li>
-              <li class="coauthors">Pascal Cuoq and <a href="http://yakobowski.org">Boris Yakobowski</a>.
-              <br></li>
-              <li class="title">
-              <a href="http://ceur-ws.org/Vol-873/papers/paper_5.pdf">
-                Benchmarking Static Analyzers.
-              </a>
-              </li>
-              <li class="howpub">COMPARE 2012: 32-35.</li>
-              <li class="abstract">
-              Static analysis benchmarks matter.</li>
-            </ul>
-            </article>
             <h5 class="visible-desktop visible-tablet"><a class="" href="bibliography.html">All publications &raquo;</a></h5>
           </div>
         </div> <!--/span-->
@@ -159,33 +158,35 @@
         <!-- Projects -->
         <div class="span4">
           <div class="padded-max visible-desktop visible-tablet"></div>
-          <h5>The STANCE project</h5>
-          <p>The objective of this <abbr class="initialism">FP7
-            STREP</abbr> is to drive scientific and technological
-          breakthroughs in the domain of software security.  Over three
-          years, <abbr class="initialism">STANCE</abbr> will define,
-          implement and validate a set of program analysis tools capable of
-          verifying the security of complex software systems made in C, C++
-          and Java.
-          </p><p>
-          <abbr class="initialism">STANCE</abbr> proposes to
-          build on existing assets: formal methods, state-of-the-art static
-          and dynamic program analysis tools, security evaluation
-          expertise, and industry-specific knowledge will be used and
-          significantly extended. The resulting program analysis toolbox
-          and supporting methods will increase the trustworthiness and the
-          cost-effectiveness of existing security-oriented processes. These
-          innovations will durably alter the domain of software security
-          assurance, with broad consequences on its legal, societal, and
-          economic aspects.</p>
-          <p>Project partners yield from France, Germany, Austria, Hungary, and Belgium. </p>
+          <div>
+            <h5>The STANCE project</h5>
+            <p>The objective of this <abbr class="initialism">FP7
+              STREP</abbr> is to drive scientific and technological
+            breakthroughs in the domain of software security.  Over three
+            years, <abbr class="initialism">STANCE</abbr> will define,
+            implement and validate a set of program analysis tools capable of
+            verifying the security of complex software systems written in C, C++
+            and Java.
+            </p><p>
+            <abbr class="initialism">STANCE</abbr> proposes to
+            build on existing assets: formal methods, state-of-the-art static
+            and dynamic program analysis tools, security evaluation
+            expertise, and industry-specific knowledge will be used and
+            significantly extended. The resulting program analysis toolbox
+            and supporting methods will increase the trustworthiness and the
+            cost-effectiveness of existing security-oriented processes. These
+            innovations will durably alter the domain of software security
+            assurance, with broad consequences on its legal, societal, and
+            economic aspects.</p>
+            <p>Project partners yield from France, Germany, Austria, Hungary, and Belgium. </p>
+          </div>
         </div><!--/span-->
 
         <!-- Colophon -->
         <div class="span1">
           <div class="padded-max visible-desktop visible-tablet"></div>
           <!-- <p><a class="red inset" href="#colophon" data-toggle="modal"><strong>&raquo;</strong></a></p> -->
-          <p><a class="red inset pull-right" href="#colophon" data-toggle="modal"><img src="assets/img/glyphicons_112_align_right_gray.png" style="margin-top:22px; height:15px;"></a></p>
+          <p><a class="red inset pull-right" href="#colophon" data-toggle="modal"><img src="assets/img/ftkicons_lozenge.png" style="margin-top:27px;"></a></p>
         </div><!--/span-->
       </div><!--/row-->
     </div><!--/fluid-container-->
@@ -230,13 +231,14 @@
         music.</p>
         <p>Body text is set 16/22px on a responsive measure with Apollo
         regular for body text and italics for hyperlinks. Akira Kobayashi's DIN Next is
-        used for headings. Icons are derived from the <a
-          href="http://glyphicons.com">Glyphicons</a> original designs.</p>
+        used for headings.</p>
         <p><a
           href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>
-        is used as a front-end framework and provide the static <abbr
+        pulls duty as a front-end framework and provides the static <abbr
           class="initialism">HTML</abbr>, <abbr class="initialism">CSS</abbr>,
-        and Javascript assets.</p>
+        and Javascript assets. A <a
+          href="https://github.com/fkirchner/bib2x-custom">patched</a> Bib2x handles
+        the bibliography exports.</p>
         <p>The source code of this website is available from <a
           href="http://github.com/fkirchner/Webpage">Github</a>; feel free to
         fork it and submit patches.</p>

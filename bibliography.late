@@ -7,7 +7,7 @@
     <meta name="description" content="Head of the LSL Software Security Laboratory at CEA">
     <meta name="author" content="Florent Kirchner, Hikitech">
     <meta name="robots" content="all">
-    <meta name="generator" content="Bib2X - BibTeX-Tool, (c) Alexander Feder">
+    <meta name="generator" content="Bib2X">
 
     <!-- License -->
     <link rel="license"       href="http://creativecommons.org/licenses/by-sa/3.0/">
@@ -53,6 +53,8 @@
           </blockquote>
         </div>
         <div class="span7">
+          <div class="red padded-max visible-desktop visible-tablet">
+          </div>
           <div class="btn-toolbar">
             <div class="btn-group">
               <a href="#2001" class="btn noit">2001</a>
@@ -73,10 +75,11 @@
             </div>
             <div class="btn-group">
               <a href="#2012" class="btn noit">2012</a>
+              <a href="#2013" class="btn noit">2013</a>
             </div>
           </div><!--/btn-toolbar-->
           <div>
-            %%GRP%%(dec: year)
+            %%GRP%%(inc:year)
             <a class="EntryGoto" id="%%name%%"></a>
             <h5 class="myheading">%%name%%</h5>
             %%FOR%%(@entry={"article"};)
@@ -85,21 +88,21 @@
               <li class="type">Journal article</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
-              <li class="howpub">%%journal%% %%volume%%(%%number%%)%%BIB%%(inc:pages;)
+              <li class="howpub">%%journal%% %%volume%%(%%number%%)%%BIB%%(dec:pages;)
               N = ": %%content%%"
               M = ""
               %%BIB%% (%%year%%).</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -112,21 +115,21 @@
               <li class="type">Conference paper</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
-              <li class="howpub">%%booktitle%% %%year%%%%BIB%%(inc:pages;)
+              <li class="howpub">%%booktitle%% %%year%%%%BIB%%(dec:pages;)
               N = ": %%content%%"
               M = ""
               %%BIB%%.</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -139,21 +142,21 @@
               <li class="type">Research report</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
-              <li class="howpub">%%institution%%%%BIB%%(inc:number;)
+              <li class="howpub">%%institution%%%%BIB%%(dec:number;)
               N = ", %%content%%"
               M = ""
               %%BIB%% (%%year%%).</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -166,18 +169,18 @@
               <li class="type">Master's thesis</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
               <li class="howpub">%%school%%, %%year%%.</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -190,18 +193,18 @@
               <li class="type">Ph.D thesis</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
               <li class="howpub">%%school%%, %%year%%.</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -214,18 +217,18 @@
               <li class="type">Note</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
               <li class="howpub">%%note%%, %%year%%.</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -238,18 +241,18 @@
               <li class="type">Manual</li>
               <li class="coauthors">%%author%%.<br></li>
               <li class="title">
-              %%BIB%%(inc:ee;)
+              %%BIB%%(dec:ee;)
               N = "<a href=\"%%content%%\">"
                 M = ""
                 %%BIB%%
                 %%title%%.
-                %%BIB%%(inc:ee;)
+                %%BIB%%(dec:ee;)
                 N = "</a>"
               M = ""
               %%BIB%%
               </li>
               <li class="howpub">%%year%%.</li>
-              %%BIB%%(inc:abstract;)
+              %%BIB%%(dec:abstract;)
               N = "<li class=\"abstract\">%%content%%</li>"
               %%BIB%%
             </ul>
@@ -262,7 +265,7 @@
         <div class="span1 offset1">
           <div class="padded-max visible-desktop"></div>
           <!-- <p><a class="red inset" href="#colophon" data-toggle="modal"><strong>&raquo;</strong></a></p> -->
-          <p><a class="inset pull-right" href="index.html"><img src="assets/img/glyphicons_221_unshare_gray.png" style="margin-top:27px; height:15px;"></a></p>
+          <p><a class="inset pull-right" href="index.html"><img src="assets/img/ftkicons_larrow.png" style="margin-top:27px;"></a></p>
         </div><!--/span-->
       </div><!--/row-->
     </div><!--/fluid-container-->
