@@ -8,18 +8,19 @@
     <meta name="author" content="Florent Kirchner, Hikitech">
     <meta name="robots" content="all">
     <meta name="generator" content="Bib2X">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- License -->
     <link rel="license"       href="http://creativecommons.org/licenses/by-sa/3.0/">
 
     <!-- Style -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -37,9 +38,9 @@
 
   <body class="hyphenate">
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
           <p><a href="http://www.cea.fr">CEA</a> is a French public multidisciplinary
           research organization whose research fields range from nuclear energy
           to biosciences, from fundamental physics to information
@@ -66,15 +67,15 @@
           </p>
         </div>
 
-        <div class="span4">
+        <div class="col-md-4">
           <!-- Navigation -->
-          <div class="red padded-max visible-desktop visible-tablet">
+          <div class="red padded-max hidden-xs">
             <a href="#address" class="heading inset noit pull-right donthyphenate" data-toggle="modal">CONTACT</a>
           </div>
-          <div class="padded-min hidden-desktop hidden-tablet">
+          <div class="padded-min visible-xs">
             <div class="btn-group pull-right">
-              <a href="#address" class="btn red inset noit donthyphenate" data-toggle="modal">CONTACT</a>
-              <a href="bibliography.html" class="btn red inset noit donthyphenate">PUBLICATIONS</a>
+              <a href="#address" class="btn btn-default red inset noit donthyphenate" data-toggle="modal">CONTACT</a>
+              <a href="bibliography.html" class="btn btn-default red inset noit donthyphenate">PUBLICATIONS</a>
             </div>
           </div>
           <!-- Publications -->
@@ -153,13 +154,13 @@
               </li>
             </ul>
             </article>
-            <h5 class="visible-desktop visible-tablet"><a class="" href="bibliography.html">All publications &raquo;</a></h5>
+            <h5 class="visible-lg visible-md visible-sm"><a class="" href="bibliography.html">All publications &raquo;</a></h5>
           </div>
-        </div> <!--/span-->
+        </div> <!--/col-md -->
 
         <!-- Projects -->
-        <div class="span4">
-          <div class="padded-max visible-desktop visible-tablet"></div>
+        <div class="col-md-4">
+          <div class="padded-max visible-lg visible-md visible-sm"></div>
           <div>
             <h5>The STANCE project</h5>
             <p>The objective of this <abbr class="initialism">FP7
@@ -182,81 +183,85 @@
             economic aspects.</p>
             <p>Project partners yield from France, Germany, Austria, Hungary, and Belgium. </p>
           </div>
-        </div><!--/span-->
+        </div><!--/col-md -->
 
         <!-- Colophon -->
-        <div class="span1">
-          <div class="padded-max visible-desktop visible-tablet"></div>
+        <div class="col-md-1">
+          <div class="padded-max visible-lg visible-md visible-sm"></div>
           <!-- <p><a class="red inset" href="#colophon" data-toggle="modal"><strong>&raquo;</strong></a></p> -->
           <p><a class="red inset pull-right" href="#colophon" data-toggle="modal"><img src="assets/img/ftkicons_lozenge.png" style="margin-top:27px;"></a></p>
-        </div><!--/span-->
+        </div><!--/col-md -->
       </div><!--/row-->
-    </div><!--/fluid-container-->
+    </div><!--/container-->
 
     <footer>
       <p id="copyright" class="">ftk (c) 2013</p>
       <a href="http://www.w3.org/html/logo/" id="w3c">
-        <img src="assets/img/html5-badge-h-css3-semantics.png" width="100px" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+	<img src="assets/img/html5-badge-h-css3-semantics.png" width="100px" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
       </a>
-    </footer>
+</footer>
 
 
     <!-- Modals -->
-    <div id="address" class="modal modal-medium hide fade" tabindex="-1" role="dialog" aria-labelledby="addressLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <strong>Florent Kirchner</strong><br>
-        <table>
-          <tr><td><abbr title="Email">M</abbr></td><td>: first.last@cea.fr</td></tr>
-          <tr><td><abbr title="Phone">P</abbr></td><td>: +33 (0) 169 080 010</td></tr>
-        </table>
-      </div>
-      <div class="borderless">
-        <img class="borderless" src="assets/img/Florent_Kirchner_L.png">
-      </div>
-      <div class="modal-body">
-        <a class="pull-right" href="assets/doc/Coming_to_Nano_INNOV.pdf">
-          <img class="well well-small" src="assets/img/nano_icon.png" style="height:60px;">
-        </a>
-        <address>
-          CEA Saclay Nano-INNOV<br>
-          Point Courrier 174<br>
-          91191 Gif-sur-Yvette<br>
-          France
-        </address>
-      </div>
-    </div>
+    <div id="address" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="address" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-medium">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <strong>Florent Kirchner</strong><br>
+            <table>
+              <tr><td><abbr title="Email">M</abbr></td><td>: first.last@cea.fr</td></tr>
+              <tr><td><abbr title="Phone">P</abbr></td><td>: +33 (0) 169 080 010</td></tr>
+            </table>
+          </div>
+          <div class="borderless">
+            <img class="borderless" src="assets/img/Florent_Kirchner_L.png">
+          </div>
+          <div class="modal-body">
+            <a class="pull-right" href="assets/doc/Coming_to_Nano_INNOV.pdf">
+              <img class="well well-sm" src="assets/img/nano_icon.png" style="height:80px;">
+            </a>
+            <address>
+              CEA Saclay Nano-INNOV<br>
+              Point Courrier 174<br>
+              91191 Gif-sur-Yvette<br>
+              France
+            </address>
+          </div>
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
 
-    <div id="colophon" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="colophonLabel" aria-hidden="true">
-      <div class="modal-body">
-        <p>The layout of this page draws inspiration from the cover pages of <a
-          href="http://www.henle.com">G. Henle</a>'s blue Urtext edition of sheet
-        music.</p>
-        <p>Body text is set 16/22px on a responsive measure with Apollo
-        regular for body text and italics for hyperlinks. Akira Kobayashi's DIN Next is
-        used for headings.</p>
-        <p><a
-          href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>
-        pulls duty as a front-end framework and provides the static <abbr
-          class="initialism">HTML</abbr>, <abbr class="initialism">CSS</abbr>,
-        and Javascript assets. A <a
-          href="https://github.com/fkirchner/bib2x-custom">patched</a> Bib2x handles
-        the bibliography exports.</p>
-        <p>The source code of this website is available from <a
-          href="http://github.com/fkirchner/Webpage">Github</a>; feel free to
-        fork it and submit patches.</p>
-      </div>
-    </div>
+    <div id="colophon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="colophon" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>The layout of this page draws inspiration from the cover pages of <a
+              href="http://www.henle.com">G. Henle</a>'s blue Urtext edition of sheet
+            music.</p>
+            <p>Body text is set 16/22px on a responsive measure with Apollo
+            regular for body text and italics for hyperlinks. Akira Kobayashi's DIN Next is
+            used for headings.</p>
+            <p><a
+              href="http://twitter.github.com/bootstrap/index.html">Bootstrap</a>
+            pulls duty as a front-end framework and provides the static <abbr
+              class="initialism">HTML</abbr>, <abbr class="initialism">CSS</abbr>,
+            and Javascript assets. A <a
+              href="https://github.com/fkirchner/bib2x-custom">patched</a> Bib2x handles
+            the bibliography exports.</p>
+            <p>The source code of this website is available from <a
+              href="http://github.com/fkirchner/Webpage">Github</a>; feel free to
+            fork it and submit patches.</p>
+          </div>
+        </div> <!-- /modal-content -->
+      </div> <!-- /modal-dialog -->
+    </div> <!-- /modal -->
 
-    <!-- Le javascript
-    ================================================== -->
+    <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery-1.8.3.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/hyphenate.min.js"></script>
 
-    <script type="text/javascript">
-      $(".contact").before('<span class="braces inset">{</span> ');
-    </script>
   </body>
 </html>

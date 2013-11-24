@@ -5,18 +5,19 @@
     <meta name="author" content="Florent Kirchner, Hikitech">
     <meta name="robots" content="all">
     <meta name="generator" content="Bib2X">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- License -->
     <link rel="license"       href="http://creativecommons.org/licenses/by-sa/3.0/">
 
     <!-- Style -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->

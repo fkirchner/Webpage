@@ -16,9 +16,9 @@
 
   <body class="hyphenate">
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
           <blockquote class="pull-right">
             <p>But you can go on thinking and imagining forever further and stop at no
             decisions to pick up a bag for the thinkings. Turn your thinking into your
@@ -26,30 +26,30 @@
             <small>Jack Kerouac, Road Workbook - Mexico, 1950</small>
           </blockquote>
         </div>
-        <div class="span7">
-          <div class="red padded-max visible-desktop visible-tablet">
+        <div class="col-md-7">
+          <div class="red padded-max visible-lg visible-md visible-sm">
           </div>
           <div class="btn-toolbar">
             <div class="btn-group">
-              <a href="#2001" class="btn noit">2001</a>
-              <a href="#2002" class="btn noit">2002</a>
-              <a href="#2003" class="btn noit">2003</a>
+              <a href="#2001" class="btn btn-default noit">2001</a>
+              <a href="#2002" class="btn btn-default noit">2002</a>
+              <a href="#2003" class="btn btn-default noit">2003</a>
             </div>
             <div class="btn-group">
-              <a href="#2004" class="btn noit">2004</a>
-              <a href="#2005" class="btn noit">2005</a>
-              <a href="#2006" class="btn noit">2006</a>
-              <a href="#2007" class="btn noit">2007</a>
+              <a href="#2004" class="btn btn-default noit">2004</a>
+              <a href="#2005" class="btn btn-default noit">2005</a>
+              <a href="#2006" class="btn btn-default noit">2006</a>
+              <a href="#2007" class="btn btn-default noit">2007</a>
             </div>
             <div class="btn-group">
-              <a href="#2008" class="btn noit">2008</a>
-              <a href="#2009" class="btn noit">2009</a>
-              <a href="#2010" class="btn noit">2010</a>
-              <a href="#2011" class="btn noit">2011</a>
+              <a href="#2008" class="btn btn-default noit">2008</a>
+              <a href="#2009" class="btn btn-default noit">2009</a>
+              <a href="#2010" class="btn btn-default noit">2010</a>
+              <a href="#2011" class="btn btn-default noit">2011</a>
             </div>
             <div class="btn-group">
-              <a href="#2012" class="btn noit">2012</a>
-              <a href="#2013" class="btn noit">2013</a>
+              <a href="#2012" class="btn btn-default noit">2012</a>
+              <a href="#2013" class="btn btn-default noit">2013</a>
             </div>
           </div><!--/btn-toolbar-->
           <div>
@@ -234,14 +234,14 @@
             %%ROF%%
             %%PRG%%
           </div><!--/bib2x-->
-        </div> <!--/span-->
+        </div> <!--/col-md -->
         <!-- Back to home -->
-        <div class="span1 offset1">
-          <div class="padded-max visible-desktop"></div>
+        <div class="col-md-1 col-md-offset1">
+          <div class="padded-max visible-lg visible-md"></div>
           <p><a class="inset pull-right" href="index.html"><img src="assets/img/ftkicons_larrow.png" style="margin-top:27px;"></a></p>
         </div><!--/span-->
       </div><!--/row-->
-    </div><!--/fluid-container-->
+    </div><!--/container-->
 
     <?php require 'footer.php'; ?>
   </body>

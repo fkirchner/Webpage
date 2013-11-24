@@ -6,8 +6,9 @@ body {
   background:   #50616c;
 }
 
-div.container-fluid {
+div.container {
   padding:      40px 20px;
+  width:        100%;
   background:   white;
   border-top:   1px solid white;
   -moz-box-shadow: rgba(01,01,01,0.4) 0px 0px 1em;
@@ -102,15 +103,10 @@ img.contact {
   vertical-align: top;
 }
 
-span.braces {
-  color:          #ccc;
-  font-size:      150%;
-  margin-left:    7px;
-}
-
 article > ul {
   list-style-type:none;
   margin:       10px 0px;
+  padding:      0px;
 }
 
 article > ul li.type {
@@ -167,21 +163,13 @@ blockquote.pull-right {
   width:        inherit;
 }
 
-.modal-medium {
-  width:        419px;
-  margin-left:  -210px;
-}
-
-/* Fix modal placement in phone layout */
-@media (max-width: 768px) {
-  .modal-medium {
-    margin:     auto;
-  }
+.modal-dialog-medium {
+  width:        441px;
 }
 
 footer {
   width:        165px;
-  height:       50px;
+  height:       70px;
   margin:       auto;
   padding-top:  20px;
   display:      block;
@@ -223,4 +211,11 @@ footer p#copyright {
   margin-left: 0px;
   margin-right: 10px;
 }
+
+/* /* Fix modal placement in phone layout */ */
+/* @media (max-width: 768px) { */
+/*   .modal-medium { */
+/*     margin:     auto; */
+/*   } */
+/* } */
 
