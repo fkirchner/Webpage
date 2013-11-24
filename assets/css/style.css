@@ -125,6 +125,7 @@ article > ul li.title {
   display:      inline;
   color:        #B80F28;
   font-size:    12px;
+  text-transform: uppercase;
 }
 
 article > ul li.howpub {
