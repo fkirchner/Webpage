@@ -236,7 +236,7 @@
           </div><!--/bib2x-->
         </div> <!--/col-md -->
         <!-- Back to home -->
-        <div class="col-md-1 col-md-offset1">
+        <div class="col-md-1 col-md-offset-1">
           <div class="padded-max visible-lg visible-md"></div>
           <p><a class="inset pull-right" href="index.html"><img src="assets/img/ftkicons_larrow.png" style="margin-top:27px;"></a></p>
         </div><!--/span-->
