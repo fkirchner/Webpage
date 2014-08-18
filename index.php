@@ -52,6 +52,28 @@
             <h5>Offprints</h5>
             <article>
             <ul>
+              <li class="type">Journal paper</li>
+              <li class="coauthors">
+              <a href="http://www.irisa.fr/celtique/cachera/index_fr.html">David Cachera</a>, <a href="http://www.irisa.fr/celtique/jensen/">Thomas P. Jensen</a>, and <a href="http://www.irisa.fr/celtique/jobin/">Arnaud Jobin</a>.
+              <br></li>
+              <li class="title">
+              <a href="http://authors.elsevier.com/a/1PUrKc7X4aqet">
+                Inference of Polynomial Invariants for Imperative Programs: A Farewell to Gr&#x6f;&#x0308;bner Bases.
+              </a>
+              </li>
+              <li class="howpub">Science of Computer Programming, Volume 93, Part B (2014).</li>
+              <li class="abstract">
+              We present a static analysis for computing polynomial invariants
+              for imperative programs. A distinguishing feature of the
+              technique is that it computes polynomial loop invariants without
+              resorting to Gröbner base computations. It uses remainder 
+              computations over parameterized polynomials in order to handle 
+              conditionals and loops efficiently
+              </li>
+            </ul>
+            </article>
+            <article>
+            <ul>
               <li class="type">Short paper</li>
               <li class="coauthors"><a href="http://shemesh.larc.nasa.gov/people/aeg/">Alwyn Goodloe</a>, <a href="http://shemesh.larc.nasa.gov/people/cam/">César A. Muñoz</a>, and <a href="https://www.polytechnique.org/profile/loic.correnson.1993">Loïc Correnson</a>.<br></li>
               <li class="title">
@@ -100,27 +122,6 @@
               Exchanging mutable data objects with untrusted code is a delicate
               matter because of the risk of creating a data space that is accessible
               by an attacker.</li>
-            </ul>
-            </article>
-            <article>
-            <ul>
-              <li class="type">Conference paper</li>
-              <li class="coauthors">
-              <a href="http://www.irisa.fr/celtique/cachera/index_fr.html">David Cachera</a>, <a href="http://www.irisa.fr/celtique/jensen/">Thomas P. Jensen</a>, and <a href="http://www.irisa.fr/celtique/jobin/">Arnaud Jobin</a>.
-              <br></li>
-              <li class="title">
-              <a href="http://dx.doi.org/10.1007/978-3-642-33125-1_7">
-                Inference of Polynomial Invariants for Imperative Programs: A Farewell to Gr&#x6f;&#x0308;bner Bases.
-              </a>
-              </li>
-              <li class="howpub">SAS 2012: 58-74.</li>
-              <li class="abstract">
-              We propose a static analysis for computing polynomial
-              invariants for imperative programs. The analysis is derived from
-              an abstract interpretation of a backwards semantics, and computes
-              pre-conditions for equalities like g = 0 to hold at the end of
-              execution.
-              </li>
             </ul>
             </article>
             <h5 class="visible-lg visible-md visible-sm"><a class="" href="bibliography.html">All publications &raquo;</a></h5>

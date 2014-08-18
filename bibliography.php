@@ -54,6 +54,36 @@
           </div><!--/btn-toolbar-->
           <div>
             
+            <a class="EntryGoto" id="2014"></a>
+            <h5 class="myheading">2014</h5>
+            
+            <article>
+            <ul>
+              <li class="type">Journal article</li>
+              <li class="coauthors">David Cachera and Thomas Jensen and Arnaud Jobin and Florent Kirchner.<br></li>
+              <li class="title">
+              
+                Inference of polynomial invariants for imperative programs: A farewell to Gröbner bases .
+                
+              </li>
+              <li class="howpub">Science of Computer Programming  93, Part B(0): 89 - 109 (2014).</li>
+              <li class="abstract">Abstract The article presents a static analysis for computing polynomial invariants for imperative programs. The analysis is derived from an abstract interpretation of a backwards semantics, and computes preconditions for equalities of the form g = 0 to hold at the end of execution. A distinguishing feature of the technique is that it computes polynomial loop invariants without resorting to Gröbner base computations. The analysis uses remainder computations over parameterized polynomials in order to handle conditionals and loops efficiently. The algorithm can analyze and find a large majority of loop invariants reported previously in the literature, and executes significantly faster than implementations using Gröbner bases. </li>
+            </ul>
+            </article>
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+            
             <a class="EntryGoto" id="2013"></a>
             <h5 class="myheading">2013</h5>
             
