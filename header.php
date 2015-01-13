@@ -28,5 +28,6 @@
     <link rel="apple-touch-icon" href="assets/ico/apple-touch-icon-57.png">
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <script type="text/javascript" src="http://fast.fonts.net/jsapi/197fef63-7503-4830-8149-bd2601653064.js"></script>
 
