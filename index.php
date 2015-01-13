@@ -47,6 +47,7 @@
             <div class="btn-group pull-right">
               <a href="#address" class="btn btn-default red inset noit donthyphenate" data-toggle="modal">CONTACT</a>
               <a href="bibliography.html" class="btn btn-default red inset noit donthyphenate">PUBLICATIONS</a>
+              <a href="https://twitter.com/__ftk" class="btn btn-default red inset noit donthyphenate"><i class="fa fa-twitter"></i></a>
             </div>
           </div>
           <!-- Publications -->
