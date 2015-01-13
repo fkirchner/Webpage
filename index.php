@@ -215,7 +215,7 @@
             the bibliography exports.</p>
             <p>The source code of this website is available from <a
               href="http://github.com/fkirchner/Webpage">Github</a>; feel free to
-            fork it and submit improments.</p>
+            fork it and submit improvements.</p>
           </div>
         </div> <!-- /modal-content -->
       </div> <!-- /modal-dialog -->
