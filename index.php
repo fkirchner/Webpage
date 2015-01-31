@@ -40,8 +40,11 @@
         <div class="col-md-4">
           <!-- Navigation -->
           <div class="red padded-max hidden-xs">
-            <div class="pull-right"><a href="#address" class="heading inset noit pull-right donthyphenate" data-toggle="modal">CONTACT</a><br>
-            <a href="https://twitter.com/__ftk" class="heading inset noit pull-right donthyphenate" data-toggle="modal"><i class="fa fa-twitter"></i></a></div>
+            <div class="pull-right">
+              <a href="#address" class="heading inset noit pull-right donthyphenate" data-toggle="modal">CONTACT</a><br>
+              <a href="http://www.informatik.uni-trier.de/~ley/pers/hd/k/Kirchner:Florent.html" class="heading inset noit pull-right donthyphenate" data-toggle="modal"><img src="assets/img/dblp.png"></a>
+              <a href="https://twitter.com/__ftk" class="heading inset noit pull-right donthyphenate" data-toggle="modal"><i class="fa fa-twitter"></i></a>
+              </div>
           </div>
           <div class="padded-min visible-xs">
             <div class="btn-group pull-right">
